@@ -1,12 +1,9 @@
 <template>
     <div id="app">
     <typical
-    class="font-weight-medium typicalWrapper"
-      :steps="['Mathieu MAZAL',8000,'',500,
-      ]"
-      :wrapper="'h1'"
-      :loop="Infinity"
-    >{{ $t("PresentationHomePage.name") }}</typical>
+    class="font-weight-medium typicalWrapper" :steps="['Mathieu MAZAL',8000,'',500,]" :wrapper="'h1'" :loop="Infinity">
+      {{ $t("PresentationHomePage.name") }}
+    </typical>
   </div>
 </template>
 

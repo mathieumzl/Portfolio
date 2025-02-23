@@ -10,7 +10,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     version: '0.0.0',
-    name: 'MAZAL Mathieu',
+    name: 'MZL Home Design',
     locale: 'fr'
   },
   mutations: {

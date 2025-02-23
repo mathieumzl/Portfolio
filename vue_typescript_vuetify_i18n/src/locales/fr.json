@@ -1,7 +1,18 @@
 {
   "HeaderPresentation": "Présentation",
+  "HeaderAccueil": "Accueil",
   "HeaderContact": "Contact",
-  "HeaderProjets" :"Projets",
+  "HeaderRealisations" :"Réalisations",
+  "HeaderPrestation" :"Préstations",
+  "HeaderEmail": "mazal.mathieu@gmail.com",
+  "HeaderHoraire": "Lundi au Vendredi de 09H à 17H",
+  "VideoTitre": "Architecte d'intérieur - Montpellier",
+  "VideoLegende": "Lundi au Vendredi de 09H à 17H",
+  "SpacePart": "Particuliers",
+  "HeaderPartPresentation": "Présentation",
+  "HeaderPartContact": "Contact",
+  "HeaderPartProjets" :"Projets vr",
+  "SpacePro": "Professionnels",
   "HeaderProPresentation": "Présentation",
   "HeaderProContact": "Contact",
   "HeaderProProjets" :"Projets vr",
@@ -88,7 +99,6 @@
   "FilterPersonal": "Personnel",
   "FilterIProfessional": "Professionnel",
   "SpacePortfolio": "Portfolio",
-  "SpacePro": "Espace professionnel",
   "CarouselPros": {
     "CarouselPro99": {
       "name": "Ancien Stade Nautique - Bellerive-Sur-Allier",

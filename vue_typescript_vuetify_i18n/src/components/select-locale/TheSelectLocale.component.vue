@@ -4,6 +4,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-btn color='transparent' v-bind="attrs" v-on="on">{{$store.state.locale}}</v-btn>
       </template>
+    <!--Retirer commentaire pour langues-->
       <!--<v-card class="mt-3" max-width="400" color="transparent">
         <v-list-item-group v-for="locale in locales" :key="locale.code">
           <v-btn color="transparent" @click="switchLanguage(locale.code)"><country-flag class='mr-1' :country='locale.code'/>{{locale.code}}</v-btn>

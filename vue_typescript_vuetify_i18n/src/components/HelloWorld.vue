@@ -6,9 +6,9 @@
     <v-container id="present">
       <pf-PresentationHomePage/>
     </v-container>
-    <v-container fluid pa-0  id="contacts">
+    <!--<v-container fluid pa-0  id="contacts">
       <pf-Contacts/>
-    </v-container>
+    </v-container>-->
     <v-container fluid pa-0 id="projects">
       <v-divider></v-divider>
       <v-card class='rounded-0' align="center" color="blue-grey darken-4" elevation='14'>
