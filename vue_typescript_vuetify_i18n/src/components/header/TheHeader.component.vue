@@ -176,22 +176,15 @@ export default Vue.extend({
   .header-right {
     float: none;
   }
-  .nav_item {
-    display: block !important;
-    z-index: 7 !important;
-  }
 }
 @media only screen and (min-width: 1000px) {
   .nav_item {
-    display: block !important;
     z-index: 7 !important;
   }
 }
 @media only screen and (max-width: 1000px) {
   .nav_item {
     z-index: 7 !important;
-  }
-  .nav_menu {
     display: block !important;
   }
 }

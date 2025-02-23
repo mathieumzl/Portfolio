@@ -20,8 +20,12 @@ export default Vue.extend({
     return {
       captions: [
         'Créer des intérieurs qui vous ressemblent',
-        'L’harmonie parfaite entre esthétique et fonctionnalité.',
-        'Architecture intérieure sur-mesure, pour un cadre de vie exceptionnel.'
+        'L’harmonie parfaite entre esthétique et fonctionnalité',
+        'Des intérieurs pensés pour vous, conçus avec passion',
+        'Des lieux pensés pour vous, conçus pour durer',
+        'Imaginer, créer, personnaliser',
+        'Concevons ensemble un lieu qui vous ressemble',
+        'Chaque espace a une âme, donnons-lui la vôtre'
       ],
       currentCaptionIndex: 0,
       currentCaption: ''

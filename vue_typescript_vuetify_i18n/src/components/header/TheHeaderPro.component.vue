@@ -1,4 +1,5 @@
 <template>
+
   <!--
     <v-app-bar flex app dense color='rgb(38, 50, 56, 0.6)' >
       <v-toolbar-title> <a @click="scrollTo('#home')" style="color:white !important">{{$store.state.name}}</a> </v-toolbar-title>
@@ -118,7 +119,7 @@ export default Vue.extend({
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .header a {
     float: none;
     display: block;
@@ -128,13 +129,13 @@ export default Vue.extend({
     float: none;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
   .nav_item {
     display: none !important;
     z-index: 0 !important;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .nav_item {
     z-index: 7 !important;
   }

@@ -30,13 +30,13 @@
   "clear": "Effacer",
   "PresentationHomePage": {
     "name":"MAZAL Mathieu",
-    "school":"Diplômé du Mastère en Architecture d'intérieur - ESDAC Montpellier",
-    "alternance":"Alternance à l'agence Atelier AA - Architecte d'intérieur",
+    "school":"Architecture d'intérieur - Montpellier",
+    "alternance":"Accompagnement Particuliers & Professionnels",
     "titrepro":"Freelance - Perspectiviste & Graphiste 3D",
     "espacepro":"Bienvenue dans l'espace professionnels",
     "Description": {
-      "paragraph1":"Au cours de ma formation et de mon expérience en entreprise en tant qu'alternant, j’ai eu l’opportunité de travailler sur divers projets d'architecture d'intérieur, allant de la conception d'espaces privés à l'aménagement d'espaces collectifs.",
-      "paragraph2":"La conception de projet et la création d’espace m'a toujours passionné ainsi que de pouvoir appréhender un plan en volume par la réalisation de maquettes et rendu 3D. "
+      "paragraph1":"Passionné par la conception d’espaces harmonieux et fonctionnels, j’accompagne mes clients – particuliers comme professionnels – dans la création d’intérieurs uniques, adaptés à leurs besoins et à leur identité.",
+      "paragraph2":"Mon expérience en agences m’ont permis de développer une approche créative et technique, alliant esthétique et fonctionnalité. Aujourd’hui en tant que freelance, je propose un accompagnement sur-mesure, de la conception à la réalisation, en passant par le design 3D et la mise en valeur des volumes."
     },
     "button":"Curriculum Vitae",
     "DescriptionPro": {
