@@ -1,7 +1,10 @@
 <template>
-  <div fluid pa-0>
+  <div :style="{ backgroundColor: $t('ColorBackground') }" fluid pa-0>
     <v-container fluid pa-0>
       <pf-HomeCover id="home"/>
+    </v-container>
+    <v-container fluid pa-0  id="prestations">
+      <pf-Prestations/>
     </v-container>
     <v-container id="present">
       <pf-PresentationHomePage/>
@@ -11,7 +14,7 @@
     </v-container>-->
     <v-container fluid pa-0 id="projects">
       <v-divider></v-divider>
-      <v-card class='rounded-0' align="center" color="blue-grey darken-4" elevation='14'>
+      <v-card class='rounded-0' align="center" :color="$t('ColorProjet')" elevation='14'>
          <pf-CardsProjectsPresentation/>
       </v-card>
     </v-container>

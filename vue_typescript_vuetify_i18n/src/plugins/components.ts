@@ -16,6 +16,7 @@ import CardsProjectsSlide from '@/components/cards-projects/CardsProjectsSlide.c
 import HomeCover from '@/components/home-cover/HomeCover.component.vue'
 import PresentationHomePage from '@/components/presentation-home-page/PresentationHomePage.component.vue'
 import Contacts from '@/components/contacts/contacts.component.vue'
+import Prestations from '@/components/contacts/Prestations.component.vue'
 
 /* Import Projet Page pro */
 import PresentationHomePagePro from '@/components/presentation-home-page/PresentationHomePagePro.component.vue'
@@ -49,6 +50,7 @@ Vue.component('pf-CardsProjectsSlide', CardsProjectsSlide)
 Vue.component('pf-HomeCover', HomeCover)
 Vue.component('pf-PresentationHomePage', PresentationHomePage)
 Vue.component('pf-Contacts', Contacts)
+Vue.component('pf-Prestations', Prestations)
 
 /* Component Projet Page pro */
 Vue.component('pf-PresentationHomePagePro', PresentationHomePagePro)

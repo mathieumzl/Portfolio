@@ -2,7 +2,7 @@
   <div >
     <v-menu open-on-hover bottom offset-y>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn color='transparent' v-bind="attrs" v-on="on">{{$store.state.locale}}</v-btn>
+        <v-btn class="btn-lang" v-bind="attrs" v-on="on">{{$store.state.locale}}</v-btn>
       </template>
     <!--Retirer commentaire pour langues-->
       <!--<v-card class="mt-3" max-width="400" color="transparent">
@@ -36,4 +36,16 @@ export default Vue.extend({
 </script>
 
 <style>
+/* Style par défaut (sans survol) */
+.btn-lang {
+  background: transparent !important; /* Couleur de fond */
+  color: #3E3E3E !important; /* Couleur du texte */
+  transition: all 0.3s ease-in-out; /* Animation fluide */
+}
+
+/* Style au survol */
+.btn-lang:hover {
+  background: #B5BCAF !important; /* Inversion des couleurs */
+  color: White !important;
+}
 </style>

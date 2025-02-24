@@ -6,7 +6,28 @@
     <div class="video-overlay">
       <p class="video-caption static-caption">{{$t('VideoTitre')}}</p>
       <p class="VideoLegende animated-caption">{{ currentCaption }}</p>
+      <!-- ✅ Bouton qui ouvre le popup -->
+      <v-btn class="minimal-btn" outlined large @click="showDialog = true">
+        Découvrir
+      </v-btn>
     </div>
+        <!-- ✅ POPUP pour choisir entre Particulier et Pro -->
+    <v-dialog v-model="showDialog" max-width="400" transition="none" eager>
+      <v-card>
+        <v-card-title class="headline">Vous êtes :</v-card-title>
+        <v-card-text>
+          <v-btn class="minimal-btn" outlined large @click="redirect('/particuliers')">
+            Un Particulier
+          </v-btn>
+          <v-btn block color="secondary" @click="redirect('/pro')">
+            Un Professionnel
+          </v-btn>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn text @click="showDialog = false">Annuler</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
     <v-divider class="mt-n1" opacity="0" color="rgba(109,91,58,0)" />
     <v-divider class="mt-n1" color="white" />
   </v-container>
@@ -18,6 +39,7 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
+      showDialog: false, // Ajout pour que le popup soit réactif immédiatement
       captions: [
         'Créer des intérieurs qui vous ressemblent',
         'L’harmonie parfaite entre esthétique et fonctionnalité',
@@ -43,6 +65,23 @@ export default Vue.extend({
 </script>
 
 <style lang="css" scoped>
+.minimal-btn {
+  font-family: "Poppins", sans-serif; /* Typo moderne */
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  padding: 12px 24px;
+  border: 2px solid #798478; /* Bordure fine et élégante */
+  color: #798478; /* Texte couleur douce */
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.minimal-btn:hover {
+  background: #798478; /* Effet de hover subtil */
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
 .video-container {
   position: relative;
   width: 100%;

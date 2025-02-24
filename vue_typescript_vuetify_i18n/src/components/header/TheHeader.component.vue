@@ -26,22 +26,22 @@
       <v-app-bar fixed class="TitreContactHPBar">
         <v-spacer></v-spacer>
         <v-icon size="1em" class="IconHeader" >mdi-clock-time-four-outline</v-icon>
-        <v-toolbar-title class="TitreContactHP" style="color:white !important;">
+        <v-toolbar-title class="TitreContactHP">
           <a style="text-decoration: none;">{{$t('HeaderHoraire')}}</a>
         </v-toolbar-title>
             <v-icon size="1em"  class="IconHeader" >mdi-fountain-pen-tip</v-icon>
         <v-toolbar-title class="TitreContactHP" style="color:white !important;">
-          <a href="mailto:mazal.mathieu@outlook.fr" style="text-decoration: none;">{{$t('HeaderEmail')}}</a>
+          <a href="mailto:mazal.mathieu@gmail.com" style="text-decoration: none;">{{$t('HeaderEmail')}}</a>
         </v-toolbar-title>
       </v-app-bar>
     </div>
     <!-- Barre de couleur au-dessus de la v-app-bar -->
         <!-- Barre de navigation -->
-        <v-app-bar fixed  style="margin-top: 1.3em;" color='rgb(38, 50, 56, 0.6)' >
+        <v-app-bar fixed  style="margin-top: 1.3em;" color='rgba(245, 241, 235, 0.9)' >
           <v-app-bar-nav-icon class="nav_item" @click="drawer = true"></v-app-bar-nav-icon>
           <!-- Titre et lien vers l'accueil -->
           <v-toolbar-title>
-            <a @click="scrollTo('#home')" style="color:white !important" >{{$store.state.name}}</a>
+            <a @click="scrollTo('#home')" class="TitreSiteHP" >{{$store.state.name}}</a>
           </v-toolbar-title>
           <v-spacer></v-spacer>
           <!-- Accueil -->
@@ -111,11 +111,16 @@ export default Vue.extend({
   margin-top: -0.3em;
 }
 .TitreContactHPBar {
+  background: #B5BCAF !important;
   height: 2.6em !important;
   margin-top: -1.3em !important;
 }
+/* Couleur hover */
+.TitreContactHP a:hover {
+  color: #A36A4A !important;
+}
 .TitreContactHP a {
-  color: white !important;
+  color: #000000 !important;
   font-size: 0.6em;
 }
 .TitreContactHP {
@@ -158,7 +163,7 @@ export default Vue.extend({
 /* Style the active/current link*/
 .header a.active {
   background-color: dodgerblue;
-  color: white;
+  color: #3E3E3E;
 }
 
 /* Float the link section to the right */
@@ -192,12 +197,23 @@ export default Vue.extend({
 .TitreHP {
   font-weight: normal;
   text-decoration: none;
-  color: white !important;
+  color: #3E3E3E !important;
   font-size: 1.2em;
   margin: 0.2em;
 }
 /* Couleur hover */
 .TitreHP:hover {
-  color: #cf9b58 !important;
+  color: #A36A4A !important;
+}
+.TitreSiteHP {
+  font-weight: normal;
+  text-decoration: none;
+  color: #3E3E3E !important;
+  font-size: 1.2em;
+  margin: 0.2em;
+}
+/* Couleur hover */
+.TitreSiteHP:hover {
+  color: #A36A4A !important;
 }
 </style>
