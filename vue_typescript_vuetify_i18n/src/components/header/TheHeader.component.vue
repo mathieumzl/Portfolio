@@ -115,9 +115,14 @@ export default Vue.extend({
   height: 2.6em !important;
   margin-top: -1.3em !important;
 }
-/* Couleur hover */
+/* Couleur hover et effet */
+.TitreContactHP a {
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
 .TitreContactHP a:hover {
   color: #A36A4A !important;
+  transform: scale(1.01) !important;  /* Effet d'agrandissement */
 }
 .TitreContactHP a {
   color: #000000 !important;
@@ -200,10 +205,14 @@ export default Vue.extend({
   color: #3E3E3E !important;
   font-size: 1.2em;
   margin: 0.2em;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 /* Couleur hover */
 .TitreHP:hover {
   color: #A36A4A !important;
+  transform: scale(1.05) !important;  /* Effet d'agrandissement */
+  text-decoration: underline;
 }
 .TitreSiteHP {
   font-weight: normal;
@@ -211,9 +220,14 @@ export default Vue.extend({
   color: #3E3E3E !important;
   font-size: 1.2em;
   margin: 0.2em;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent; /* Invisible au départ */
 }
 /* Couleur hover */
 .TitreSiteHP:hover {
   color: #A36A4A !important;
+  transform: scale(1.05) !important;  /* Effet d'agrandissement */
 }
 </style>

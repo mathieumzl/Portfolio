@@ -10,7 +10,16 @@
   "HeaderHoraire": "Lundi au Vendredi de 09H à 17H",
   "VideoTitre": "Architecte d'intérieur - Montpellier",
   "VideoLegende": "Lundi au Vendredi de 09H à 17H",
+  "HomePageBtnProjet": "CRÉER VOTRE PROJET",
+  "HomePageBtnProjetVous": "CHOISISSEZ VOTRE PROFIL",
+  "HomePageBtnParticulier": "Particulier",
+  "HomePageBtnParofessionnel": "Professionnel",
   "SpacePart": "Particuliers",
+  "ChoixPrestationCarteParticuliers": "Particuliers",
+  "ChoixPrestationCarteProfessionnels": "Professionnels",
+  "ChoixPrestationCarteParticuliersTexte": "Envie de transformer votre intérieur ? Que ce soit pour optimiser votre espace, moderniser votre décoration, rénover votre logement ou même pour vous accompagner lors de visites immobilières pour un achat, je vous guide à chaque étape pour concevoir un projet unique et sur-mesure.",
+  "ChoixPrestationCarteProfessionnelsTexte": "En quête d’un collaborateur réactif et compétent ? J’intègre vos équipes en prestation pour la réalisation de plans techniques, 3D et rendus visuels, afin de concrétiser vos idées avec rigueur et créativité.",
+  "ChoixPrestationCarteBtn": "Découvrir",
   "HeaderPartPresentation": "Présentation",
   "HeaderPartContact": "Contact",
   "HeaderPartProjets" :"Projets vr",
@@ -32,15 +41,16 @@
   "clear": "Effacer",
   "PresentationHomePage": {
     "name":"MAZAL Mathieu",
-    "school":"Architecture d'intérieur - Montpellier",
-    "alternance":"Accompagnement Particuliers & Professionnels",
+    "Titre":"Architecture d'intérieur - Montpellier",
+    "TitreDescription":"Accompagnement Particuliers & Professionnels",
     "titrepro":"Freelance - Perspectiviste & Graphiste 3D",
     "espacepro":"Bienvenue dans l'espace professionnels",
     "Description": {
-      "paragraph1":"Passionné par la conception d’espaces harmonieux et fonctionnels, j’accompagne mes clients – particuliers comme professionnels – dans la création d’intérieurs uniques, adaptés à leurs besoins et à leur identité.",
-      "paragraph2":"Mon expérience en agences m’ont permis de développer une approche créative et technique, alliant esthétique et fonctionnalité. Aujourd’hui en tant que freelance, je propose un accompagnement sur-mesure, de la conception à la réalisation, en passant par le design 3D et la mise en valeur des volumes."
+      "paragraph0": "Imaginer, structurer, sublimer.",
+      "paragraph1":"J’accompagne particuliers et professionnels dans la conception d’espaces sur-mesure, où chaque détail est pensé pour allier esthétisme et fonctionnalité.",
+      "paragraph2":"Avec une solide expérience en agence, j’interviens à chaque étape du projet : conception, plans techniques, modélisation 3D et mise en valeur des volumes. Chaque détail est pensé pour offrir un intérieur unique, adapté à vos besoins et à votre identité."
     },
-    "button":"Curriculum Vitae",
+    "button":"MON HISTOIRE - MES COMPÉTENCES",
     "DescriptionPro": {
       "paragraph1":"Travaillant avec des architectes depuis plus de 1 an j'ai décidé de me spécialiser dans la visualisation architectural. Mon métier mélange l'artistique et la technique et consiste à réaliser des images de synthèse qui permettent à chaque personne de se projeter dans leur futur projet.",
       "paragraph2":"Ma passion pour l’architecture d’intérieur se manifeste particulièrement dans la conception de projets et la création d’espaces. J'aime transformer des plans en volumes concrets, grâce à la réalisation de maquettes et de rendus qui permettent de visualiser et d'affiner chaque détail du design."

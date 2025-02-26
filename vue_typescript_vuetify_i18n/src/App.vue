@@ -21,22 +21,27 @@ export default Vue.extend({
 <style>
 body {
   background-color: var(--v-background-base) !important;
-  font-family: 'Inter', sans-serif; /* Option : Remplace par 'Work Sans' si préféré */
+  font-family: 'DM Serif Display', serif !important; /* Option : Remplace par 'Work Sans' si préféré */
 }
 /* Titres premium et modernes */
-h1, h2, h3, h4, h5, h6, a, p {
-  font-family: 'DM Serif Display', serif;
+h1, h2, h3, h4, h5, h6, a, p, span {
+  font-family: 'DM Serif Display', serif !important;
   font-weight: 400; /* Pour garder un effet fin et élégant */
   letter-spacing: 0.5px; /* Espacement subtil pour l'élégance */
 }
-
 /* Boutons et menu */
 .v-btn, .menu-item {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif !important;
   font-weight: 600; /* Pour un look professionnel et structuré */
   text-transform: uppercase; /* Optionnel, apporte un style plus affirmé */
 }
-
+.v-application, .title {
+  font-family: 'DM Serif Display', serif !important;
+}
+/* Surcharge spécifique pour les éléments Vuetify */
+.v-btn, .v-card-title, .v-card-text, .v-menu, .v-list, .v-dialog, .v-toolbar {
+  font-family: 'DM Serif Display', serif !important;
+}
 /* Ajuster les tailles et marges */
 h1 { font-size: 2.4em; margin-bottom: 10px; }
 h2 { font-size: 2em; margin-bottom: 8px; }
