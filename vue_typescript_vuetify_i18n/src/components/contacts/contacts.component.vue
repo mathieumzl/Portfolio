@@ -11,8 +11,8 @@
                     <v-card-title class="text-decoration-underline mt-n10 justify-center">
                         <h1 class="title-contact">{{$t('HeaderContact')}}</h1>
                     </v-card-title>
-                    <a target="_blank" style="text-decoration: none;" class="black--text" href="mailto:mazal.mathieu@outlook.fr">
-                      <h4>mazal.mathieu@outlook.fr</h4>
+                    <a target="_blank" style="text-decoration: none;" class="black--text" href="mailto:contact@mazal-mathieu.fr">
+                      <h4>contact@mazal-mathieu.fr</h4>
                     </a>
                 </v-col>
                 <v-col cols="4" color="transparent">

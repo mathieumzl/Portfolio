@@ -10,7 +10,7 @@
             <v-divider width="200px" class="mt-n2" color="#cf9b58"/>
             <v-divider width="200px" color="#cf9b58"/>
             <v-divider width="200px" class="mb-12" color="#cf9b58"/>
-            <a target="_blank" style="text-decoration: none;" class="mb-12 white--text" href="mailto:mazal.mathieu@outlook.fr">
+            <a target="_blank" style="text-decoration: none;" class="mb-12 white--text" href="mailto:contact@mazal-mathieu.fr">
               <h4>{{ $t("E-mail") }}</h4>
             </a>
             <br />
