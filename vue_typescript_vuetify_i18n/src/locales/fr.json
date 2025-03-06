@@ -1,9 +1,12 @@
 {
+  "NameSite": "Home Design",
   "ColorProjet": "#B5BCAF",
   "ColorBackground": "#F5F1EB",
   "HeaderPresentation": "Présentation",
+  "HeaderPresentationMenu": "Menu",
   "HeaderAccueil": "Accueil",
   "HeaderContact": "Contact",
+  "HeaderContactDesc": "Pour toute information ou demande, contactez-moi par mail ou via mon formulaire. Je suis à votre écoute et m'engage à répondre rapidement pour vous proposer les solutions adaptées à vos besoins.",
   "HeaderRealisations" :"Réalisations",
   "HeaderPrestation" :"Préstations",
   "HeaderEmail": "contact@mazal-mathieu.fr",
@@ -43,17 +46,17 @@
     "name":"MAZAL Mathieu",
     "Titre":"Architecture d'intérieur - Montpellier",
     "TitreDescription":"Accompagnement Particuliers & Professionnels",
-    "titrepro":"Freelance - Perspectiviste & Graphiste 3D",
-    "espacepro":"Bienvenue dans l'espace professionnels",
+    "button":"MON HISTOIRE - MES COMPÉTENCES",
     "Description": {
       "paragraph0": "Imaginer, structurer, sublimer.",
       "paragraph1":"J’accompagne particuliers et professionnels dans la conception d’espaces sur-mesure, où chaque détail est pensé pour allier esthétisme et fonctionnalité.",
       "paragraph2":"Avec une solide expérience en agence, j’interviens à chaque étape du projet : conception, plans techniques, modélisation 3D et mise en valeur des volumes. Chaque détail est pensé pour offrir un intérieur unique, adapté à vos besoins et à votre identité."
     },
-    "button":"MON HISTOIRE - MES COMPÉTENCES",
+    "espacepro":"Bienvenue dans l'espace professionnels",
+    "titrepro":"De l’idée à la réalisation, donnez vie à vos projets",
     "DescriptionPro": {
-      "paragraph1":"Travaillant avec des architectes depuis plus de 1 an j'ai décidé de me spécialiser dans la visualisation architectural. Mon métier mélange l'artistique et la technique et consiste à réaliser des images de synthèse qui permettent à chaque personne de se projeter dans leur futur projet.",
-      "paragraph2":"Ma passion pour l’architecture d’intérieur se manifeste particulièrement dans la conception de projets et la création d’espaces. J'aime transformer des plans en volumes concrets, grâce à la réalisation de maquettes et de rendus qui permettent de visualiser et d'affiner chaque détail du design."
+      "paragraph1":"Dans un secteur où chaque détail compte, une visualisation de qualité fait toute la différence. Plans précis, modélisation 3D immersive, rendus photoréalistes : des outils essentiels pour clarifier une vision, optimiser un aménagement et faciliter la prise de décision.",
+      "paragraph2":"Que ce soit pour valoriser un projet, fluidifier la collaboration entre intervenants ou renforcer l'impact d'une présentation, mon expertise s’adapte à vos besoins. Architecture, immobilier, aménagement d’espaces professionnels… Chaque projet mérite des visuels à la hauteur de son ambition."
     }
   },
   "E-mail": "Par mail : contact@mazal-mathieu.fr",
@@ -65,15 +68,28 @@
     "E-mail": "Mail*",
     "Service": "Service*",
     "Message": "Message*",
-    "SendForm": "Votre message a bien était envoyé",
-    "Services": [
-      "Plan 2D matériaux",
-      "Plan 3D",
-      "Rendu Image 3D",
-      "Réalisation de vidéo",
-      "Autres"
-    ],
+    "SendForm": "Merci pour votre message. Il a été envoyé avec succès, et je reviendrai vers vous dans les plus brefs délais.",
     "Info": "* les champs signalés d'un astérisque sont obligatoires."
+  },
+  "TexteHistoireMZL": {
+    "TitreHistoire":"HISTOIRE",
+    "ParaHistoire": "Depuis toujours, l’architecture d’intérieur me passionne. Fasciné par la manière dont un espace peut transformer une ambiance, influencer les émotions et s’adapter aux besoins de chacun, j’ai choisi d’en faire mon métier.",
+    "ParaHistoire1": "Après mes études initiales dans un autre domaine, j’ai pris la décision de me réorienter pour poursuivre ce qui m’anime réellement. J’ai suivi une formation spécialisée de 5 ans, enrichie par 3 années d’expérience en agence, où j’ai eu l’opportunité de travailler sur des projets variés et exigeants.",
+    "ParaHistoire2": "Fort de ce parcours, j’ai fondé MZL Home Design, avec une ambition claire : concevoir des intérieurs uniques, pensés pour être à la fois esthétiques, fonctionnels et en parfaite harmonie avec l’identité de leurs occupants."
+  },
+  "TexteCompMZL": {
+    "TitreComp":"MES COMPÉTENCES",
+    "ParaCompTitre1":"Analyse et conception spatiale",
+    "ParaComp1": "J’étudie chaque espace pour optimiser les volumes et assurer un aménagement fluide et fonctionnel. Grâce à une analyse précise des usages et des contraintes, je crée des concepts adaptés aux besoins et à l’identité de chaque personnes.",
+    "ParaCompTitre2": "Maîtrise des logiciels de conception",
+    "ParaComp2": "Je réalise des plans techniques détaillés, des modélisations 3D ainsi que des rendus réalistes pour vous aider à vous projeter et visualiser précisément votre futur espace.",
+    "ParaCompTitre3": "Mise en valeur des espaces",
+    "ParaComp3": "Harmonisation des couleurs et des textures, sélection du mobilier et conception d’éclairages adaptés pour créer des ambiances uniques et harmonieuses.",
+    "ParaCompTitre4": "Sens du détail et harmonie visuelle",
+    "ParaComp4": "Chaque élément compte : j’associe couleurs, matériaux et textures pour créer des espaces cohérents et esthétiques. Un éclairage soigneusement pensé sublime l’atmosphère et met en valeur chaque volume.",
+    "ParaCompTitre5": "Créativité et capacité d’adaptation",
+    "ParaComp5": "Chaque projet étant unique, j’imagine des solutions sur-mesure en parfaite adéquation avec l’identité du lieu et vos attentes. En intégrant les contraintes techniques et budgétaires, je veille à un résultat à la fois esthétique, fonctionnel et réalisable.",
+    "ParaCompFin":"Un projet en tête ? Discutons-en !"
   },
   "PreSkills":"Competences",
   "PreHandDrawn":"Dessin à la main",
@@ -124,6 +140,123 @@
       ]
     }
   },
+  "TitleAllPrestations":"PRESTATIONS",
+  "TitleAllPrestationsProDesc":"Découvrez les prestations sur mesure, adaptées à vos projets ponctuels ou à long terme, avec un engagement pour la qualité et votre satisfaction.",
+  "TitleAllPrestationsPartDesc": "h",
+  "Price": "Prix",
+  "DailyRate":"Forfait journée",
+  "PrestationsPro": [
+    {
+      "title": "Formule Horaire",
+      "description": "Tarification flexible pour une prestation adaptée à vos besoins.",
+      "NeedReinforcement": "Vous avez besoin d’un renfort ponctuel ?",
+      "details": "Que ce soit pour la réalisation de plans techniques, la modélisation 3D, les rendus visuels ou l’optimisation d’espaces, cette prestation vous apporte l’expertise nécessaire en toute flexibilité.",
+      "price": "70€/heure",
+      "dailyRate": "400€",
+      "tag": "Horaire"
+    },
+    {
+      "title": "Collaboration Long Terme",
+      "description": "Un accompagnement sur mesure pour vos projets récurrents.",
+      "NeedReinforcement": "Vous cherchez un partenaire fiable pour renforcer vos équipes sur la durée ?",
+      "details": "Que ce soit pour la production de plans, la modélisation 3D, les rendus ou le suivi client de vos projets, cette prestation garantit une collaboration fluide et adaptée à vos besoins.",
+      "price": "Sur devis",
+      "dailyRate": "",
+      "tag": "Horaire"
+    },
+    {
+      "title": "Création Visuelle",
+      "description": "Des images et animations pour donner vie à vos projets.",
+      "NeedReinforcement": "Besoin de visualiser votre projet en 3D ?",
+      "details": "Grâce à la modélisation et aux rendus, je vous aide à présenter vos idées de manière immersive et convaincante. Idéal pour les architectes, promoteurs et agences immobilières.",
+      "price": "Sur devis",
+      "dailyRate": "",
+      "tag": "Forfait"
+    },
+    {
+      "title": "Valorisation Immobilière",
+      "description": "Optimisez l’attrait de votre bien avant sa mise en vente.",
+      "NeedReinforcement": "Besoin de rendre un bien plus attractif ?",
+      "details": "Nous proposons des conseils d’aménagement, des retouches visuelles et des rendus 3D pour séduire les acheteurs et accélérer la vente.",
+      "price": "Sur devis",
+      "dailyRate": "",
+      "tag": "Forfait"
+    },
+    {
+      "title": "Demandes Spécifiques",
+      "description": "Pour des demandes spécifiques ou des projets uniques, contactez-nous pour des solutions personnalisées.",
+      "NeedReinforcement": "Besoin d’une prestation spécifique ?",
+      "details": "Que ce soit pour des services techniques, créatifs ou tout autre type de projet, nous sommes à votre disposition pour discuter de vos besoins. N’hésitez pas à nous contacter pour toute demande particulière : nous sommes prêts à vous proposer une solution sur mesure, quel que soit le domaine.",
+      "price": "Sur devis",
+      "dailyRate": "",
+      "tag": "Forfait"
+    }
+  ],
+  "PrestationsPart": [
+    {
+      "title": "Accompagnement Visite & Conseil",
+      "description": "Bénéficiez d’un regard avant d’acheter un bien.",
+      "NeedReinforcement": "Vous hésitez sur le potentiel d’un bien immobilier ?",
+      "details": "Visite sur place avec analyse des atouts et contraintes du bien. Conseils sur l’agencement, le potentiel d’optimisation et les éventuels travaux à prévoir. Estimation des coûts de rénovation et premières esquisses d’aménagement.",
+      "price": "À partir de 120€",
+      "dailyRate": "",
+      "tag": "Conseil"
+    },
+    {
+      "title": "Étude Préliminaire",
+      "description": "Une première approche pour visualiser votre projet.",
+      "NeedReinforcement": "Vous souhaitez une base solide avant d'entamer les travaux ?",
+      "details": "Réalisation de plans d’aménagement et estimation du budget pour vous aider à prendre les bonnes décisions.",
+      "price": "À partir de 590€",
+      "dailyRate": "Varie selon la surface et la complexité",
+      "tag": "Planification"
+    },
+    {
+      "title": "Conception 3D & Projection",
+      "description": "Visualisation réaliste de votre projet avant travaux.",
+      "NeedReinforcement": "Envie de voir votre futur intérieur en images ?",
+      "details": "Réalisation de plans techniques 2D et modélisation 3D photoréaliste avec proposition de matériaux, couleurs et mobiliers adaptés.",
+      "price": "À partir de 890€",
+      "dailyRate": "Selon la superficie et la complexité technique du projet",
+      "tag": "3D"
+    },
+    {
+      "title": "Démarches Administratives",
+      "description": "Prise en charge de vos obligations administratives.",
+      "NeedReinforcement": "Des démarches compliquées à gérer ?",
+      "details": "Réalisation du dossier administratif (déclaration préalable, permis de construire), création des pièces graphiques et suivi du dossier jusqu’à acceptation.",
+      "price": "À partir de 690€",
+      "dailyRate": "Selon la nature du projet",
+      "tag": "Administratif"
+    },
+    {
+      "title": "Tranquility : Gestion Complète du Projet",
+      "description": "Un accompagnement clé en main de A à Z.",
+      "NeedReinforcement": "Besoin d’un suivi intégral pour vos travaux ?",
+      "details": "Conception complète (plans techniques + 3D), consultation et mise en relation avec des artisans, analyse des devis et suivi des travaux jusqu’à la livraison.",
+      "price": "8 à 13% du coût total des travaux",
+      "dailyRate": "Tarif dégressif en fonction du budget global",
+      "tag": "Gestion"
+    },
+    {
+      "title": "Cuisine & Dressing Sur-Mesure",
+      "description": "Optimisation et design de votre cuisine ou dressing.",
+      "NeedReinforcement": "Besoin d’un espace parfaitement adapté à votre mode de vie ?",
+      "details": "Conception sur mesure avec optimisation du rangement, choix des matériaux et collaboration avec des artisans spécialisés pour une fabrication sur-mesure.",
+      "price": "Sur devis",
+      "dailyRate": "Selon la complexité et les matériaux choisis",
+      "tag": "Sur-Mesure"
+    },
+    {
+      "title": "Demandes Spécifiques",
+      "description": "Pour des demandes spécifiques ou des projets uniques, contactez-nous pour des solutions personnalisées.",
+      "NeedReinforcement": "Besoin d’une prestation spécifique ?",
+      "details": "Que ce soit pour des services techniques, créatifs ou tout autre type de projet, nous sommes à votre disposition pour discuter de vos besoins. N’hésitez pas à nous contacter pour toute demande particulière : nous sommes prêts à vous proposer une solution sur mesure, quel que soit le domaine.",
+      "price": "Sur devis",
+      "dailyRate": "",
+      "tag": "Forfait"
+    }
+  ],
   "Projects": {
     "Project88": {
       "name":"Temporium                    Agropolis Museum - Montpellier",

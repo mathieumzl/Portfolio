@@ -1,5 +1,4 @@
 <template>
-
   <!--
     <v-app-bar flex app dense color='rgb(38, 50, 56, 0.6)' >
       <v-toolbar-title> <a @click="scrollTo('#home')" style="color:white !important">{{$store.state.name}}</a> </v-toolbar-title>
@@ -23,43 +22,81 @@
       </div>
 </div>-->
   <div>
-    <v-app-bar color='rgb(38, 50, 56, 0.6)' app >
-      <v-app-bar-nav-icon class="nav_item" @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title class="">
-        <a  @click="scrollTo('#home')" style="color:white !important; " >{{$store.state.name}}</a>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <h4 class="nav_menu mr-4">|</h4>
-      <a class="nav_menu mr-4" style="color:white !important" @click="scrollTo('#present')"><h3>{{$t('HeaderProPresentation')}}</h3></a>
-      <h4 class="nav_menu mr-4">|</h4>
-      <a class="nav_menu mr-4" style="color:white !important" @click="scrollTo('#contacts')"><h3>{{$t('HeaderProContact')}}</h3></a>
-      <h4 class="nav_menu mr-4">|</h4>
-      <a class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" href="https://www.mazal-mathieu.fr/" ><h3>{{$t('SpacePortfolio')}}</h3></a>
-      <h4 class="nav_menu mr-4">|</h4>
-      <pf-locale/>
-    </v-app-bar>
-
-    <v-navigation-drawer v-model="drawer" temporary app color='rgb(38, 50, 56, 0.8)' class="nav_item">
+      <v-app-bar fixed class="TitreContactHPBar">
+        <v-spacer></v-spacer>
+        <v-icon size="1em" class="IconHeader" >mdi-clock-time-four-outline</v-icon>
+        <v-toolbar-title class="TitreContactHP">
+          <a style="text-decoration: none;">{{$t('HeaderHoraire')}}</a>
+        </v-toolbar-title>
+            <v-icon size="1em"  class="IconHeader" >mdi-fountain-pen-tip</v-icon>
+        <v-toolbar-title class="TitreContactHP" style="color:white !important;">
+          <a href="mailto:contact@mazal-mathieu.fr" style="text-decoration: none;">{{$t('HeaderEmail')}}</a>
+        </v-toolbar-title>
+      </v-app-bar>
+    <!-- Barre de couleur au-dessus de la v-app-bar -->
+        <!-- Barre de navigation -->
+        <v-app-bar fixed color='rgba(245, 241, 235, 0.9)' class="MainNavBar">
+          <v-app-bar-nav-icon class="nav_item" @click="drawer = true"><v-icon class="Hamburger">mdi-menu</v-icon></v-app-bar-nav-icon>
+          <!-- Titre et lien vers l'accueil -->
+          <v-toolbar-title class="TitreSiteContainer">
+            <div class="TitreSiteWrapper">
+              <img src="@/assets/logo_.png" alt="Logo" class="logo-header">
+              <a href="/" @click="scrollTo('#home')" class="TitreSiteHP TitreTexte">{{$t('NameSite')}}</a>
+            </div>
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+          <!-- Accueil -->
+          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/">
+            <a @click="scrollTo('#home')" class="TitreHP">{{$t('HeaderAccueil')}}</a>
+          </router-link>
+          <!-- Présentations/ L'atelier / L'agence -->
+          <a class="nav_menu mr-4" style="color:white !important" @click="scrollTo('#present')"><a class="TitreHP">{{$t('HeaderPresentation')}}</a></a>
+          <!-- Projet / Realisation -->
+          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/projets">
+            <a @click="scrollTo('#home')" class="TitreHP">{{$t('HeaderRealisations')}}</a>
+          </router-link>
+            <!-- Particuliers -->
+            <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/particuliers">
+                <a class="TitreHP">{{$t('SpacePart')}}</a>
+            </router-link>
+            <!-- Professionnels -->
+            <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/pro">
+                <a @click="scrollTo('#home')" class="TitreHPPro">{{$t('SpacePro')}}</a>
+            </router-link>
+          <!-- Contact -->
+          <a class="nav_menu mr-4" color="transparent" style="color:white !important" @click="scrollTo('#contacts')"><a class="TitreHP">{{$t('HeaderContact')}}</a></a>
+          <!--<h4 class="nav_menu mr-4">|</h4>-->
+          <pf-locale/>
+        </v-app-bar>
+    <v-navigation-drawer v-model="drawer" temporary app color='rgba(181, 188, 175, 1)' class="nav_item">
       <v-list class="mt-10" nav dense>
+        <img src="@/assets/logo_.png" alt="Logo" class="logo-header-ham">
         <v-list-item-group active-class="text--accent-4">
-          <v-list-item @click="drawer = false">
+            <a class="mr-4 section-divider-menu" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h3>{{$t('HeaderPresentationMenu')}}</h3></a>
+          <v-list-item  @click="drawer = false">
             <v-list-item-icon>
-              <v-icon>mdi-account-tie-voice</v-icon>
+              <v-icon color="#3E3E3E">mdi-account-tie-voice</v-icon>
             </v-list-item-icon>
-            <a class="mr-4" style="color:white !important" @click="scrollTo('#present')"><h4>{{$t('HeaderProPresentation')}}</h4></a>
+            <a class="mr-4" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h4>{{$t('HeaderPresentation')}}</h4></a>
           </v-list-item>
           <v-list-item @click="drawer = false">
             <v-list-item-icon>
-              <v-icon>mdi-fountain-pen-tip</v-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-fountain-pen-tip</v-icon>
             </v-list-item-icon>
-            <a class="mr-4" style="color:white !important" @click="scrollTo('#contacts')"><h4>{{$t('HeaderProContact')}}</h4></a>
+            <a class="mr-4" style="color:#3E3E3E  !important" @click="scrollTo('#contacts')"><h4>{{$t('HeaderContact')}}</h4></a>
           </v-list-item>
-                  <v-list-item>
-          <v-list-item-icon>
-            <v-icon>mdi-book-open-page-variant-outline</v-icon>
-          </v-list-item-icon>
-            <a class="mr-4" align="left" color="transparent" style="text-decoration: none; color:#cf9b58 !important" href="https://www.mazal-mathieu.fr/" ><h4>{{$t('SpacePortfolio')}}</h4></a>
-        </v-list-item>
+          <v-list-item @click="drawer = false">
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-presentation</v-icon>
+            </v-list-item-icon>
+            <a class="mr-4" color="transparent" style="color:#3E3E3E  !important" @click="scrollTo('#projects')"><h4>{{$t('HeaderProjets')}}</h4></a>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-account-multiple-check-outline</v-icon>
+            </v-list-item-icon>
+              <a @click="scrollTo('#home')" class="mr-4" align="left" color="transparent" style="text-decoration: none; color:#3E3E3E !important" href="https://www.mazal-mathieu.fr/#/pro" ><h4>{{$t('SpacePro')}}</h4></a>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -78,69 +115,14 @@ export default Vue.extend({
   }
 })
 </script>
-<style>
-.header {
-  overflow: hidden;
-  background-color: rgba(38, 50, 56, 0.6);
-  z-index: 2;
-}
-/* Style the header links */
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 1000px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .nav_item {
-    display: none !important;
-    z-index: 0 !important;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .nav_item {
-    z-index: 7 !important;
-  }
-  .nav_menu {
-    display: none !important;
-  }
+<style scoped>
+.TitreHPPro {
+  color: #A36A4A !important;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0.2em;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 </style>

@@ -11,66 +11,6 @@
                 </v-col>
             </v-row>
         </v-card>
-            <v-card-text color="transparent" min-height="80%" align="center" class="">
-                <v-row justify="center">
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/enscape_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>Enscape</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/vray_50px_50pxb.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>V-Ray</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/rhino_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>Rhino</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/archicad_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>Archicad</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto" >
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/revit_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>Revit</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/photoshop_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>Photoshop</span>
-                        </v-tooltip>
-                    </v-col>
-                    <v-col cols="2" md="auto">
-                        <v-tooltip bottom>
-                            <template v-slot:activator="{on, attrs}">
-                                <v-img width="70px" class="hvr-logo" src="@/assets/logo-soft/indesign_50px_50px.png" v-on="on" v-bind="attrs"/>
-                            </template>
-                            <span>InDesign</span>
-                        </v-tooltip>
-                    </v-col>
-                </v-row>
-            </v-card-text>
     </div>
 </template>
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@mdi/font": "^7.4.47",
     "core-js": "^3.6.5",
     "img-comparison-slider": "^7.1.0",
     "vue": "^2.6.11",

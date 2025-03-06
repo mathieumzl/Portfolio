@@ -16,15 +16,19 @@
       <v-card class="v-card-pop-choix" >
         <v-card-title class="minimal-btn-titre-choix">{{$t('HomePageBtnProjetVous')}}</v-card-title>
         <v-card-text class="v-card-text-choix">
-          <v-btn class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
-            {{$t('HomePageBtnParticulier')}}
-          </v-btn>
-          <v-btn class="minimal-btn-choix" outlined large @click="redirect('/pro')">
-            {{$t('HomePageBtnParofessionnel')}}
-          </v-btn>
+          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/particuliers">
+            <v-btn class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
+              {{$t('HomePageBtnParticulier')}}
+            </v-btn>
+          </router-link>
+          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/pro">
+            <v-btn class="minimal-btn-choix" outlined large @click="redirect('/pro')">
+              {{$t('HomePageBtnParofessionnel')}}
+            </v-btn>
+          </router-link>
         </v-card-text>
         <v-card-actions class="justify-end">
-          <v-btn text @click="showDialog = false">Annuler</v-btn>
+          <v-btn text @click="showDialog = false">{{$t('return')}}</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -83,8 +87,7 @@ export default Vue.extend({
 .minimal-btn-choix {
   flex: 1; /* Permet aux boutons de prendre toute la largeur disponible */
   width: 100%;
-  font-size: 1.4em !important;
-  min-width: 180px !important; /* Assure une taille minimale */
+  font-size: 2vh !important;
   max-width: 250px !important; /* Évite que ça s'étire trop */
   padding: 1em 3em !important;
   text-align: center !important;
@@ -103,6 +106,7 @@ export default Vue.extend({
 .minimal-btn {
   font-size: 1.5rem;
   font-weight: 500;
+  max-width: 300px !important; /* Évite que ça s'étire trop */
   text-transform: none;
   margin-top: 1em;
 
@@ -163,13 +167,75 @@ video {
 }
 /* Titre video */
 .VideoLegende {
-  font-size: 2em; /* Taille de la police ajustée à la largeur de l'écran */
-  margin: 0;
+  font-size: 2em; /* Ajuste dynamiquement la taille du texte */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le dépassement */
+  text-overflow: ellipsis; /* Ajoute "..." si besoin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw; /* Empêche que le titre dépasse trop */
   font-style: italic;
 }
 /* Legende video */
 .video-caption {
-  font-size: 4em; /* Taille de la police ajustée à la largeur de l'écran */
-  margin: 0;
+  font-size: 4em; /* Ajuste dynamiquement la taille du texte */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le dépassement */
+  text-overflow: ellipsis; /* Ajoute "..." si besoin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw; /* Empêche que le titre dépasse trop */
+}
+
+body, html {
+  overflow-x: hidden; /* Cache tout dépassement horizontal */
+}
+
+.video-container {
+  width: 100vw; /* Force la largeur à 100% de l’écran */
+  overflow: hidden; /* Empêche le débordement horizontal */
+}
+
+video {
+  width: 100vw !important; /* Prend toute la largeur de l’écran */
+  height: 100vh;
+  object-fit: cover; /* Assure un bon ajustement */
+}
+@media (max-width: 1200px) {
+  .VideoLegende {
+    font-size: 3vw !important;
+  }
+  .video-caption {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .VideoLegende {
+    font-size: 3vw !important;
+  }
+  .video-caption {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .VideoLegende {
+    font-size: 3vw !important;
+  }
+  .video-caption {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .VideoLegende {
+    font-size: 2.5vw !important;
+  }
+  .video-caption {
+    font-size: 5vw; /* Augmente un peu pour les petits écrans */
+  }
 }
 </style>

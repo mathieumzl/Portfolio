@@ -1,9 +1,10 @@
 <template >
     <div>
+        <!-- PARTIE PRESENTATION -->
         <v-card flat color="transparent" class="mt-5 mb-14">
             <v-row class="presentation" justify="center">
                 <v-col class="mt-4 mb-3" cols="12" lg="8">
-                <h3 class="section-divider">{{ $t("PresentationHomePage.Titre") }}</h3>
+                <h3 class="section-divider TitreH3">{{ $t("PresentationHomePage.Titre") }}</h3>
                 <br />
                 <pf-TextAnim class="TextAnim"/>
                 <p>
@@ -13,216 +14,81 @@
                 </p>
                 </v-col>
             </v-row>
-            <v-card-actions class="section-divider justify-center">
+            <v-card-actions class="section-divider-HC justify-center">
                 <v-btn class="custom-btn" @click="sheet = true" elevation="5">
                     {{$t("PresentationHomePage.button")}}
                 </v-btn>
             </v-card-actions>
         </v-card>
+        <!-- DEBUT SHEET HISTOIRE -->
         <v-bottom-sheet v-model="sheet" >
             <v-sheet class="text-center SheetPresentation" min-height="300px">
                 <div align="center" class="sheet_container">
                     <v-divider color="#3E3E3E"/>
                     <v-divider color="#3E3E3E"/>
                     <v-divider color="#3E3E3E"/>
+                    <v-divider color="#3E3E3E"/>
                     <v-container fluid class="sheet_item">
                     <v-card class="mobile-card" flat color="transparent">
+                        <!-- BOUTON QUITTER -->
                         <v-btn class="mt-5 mb-6 custom-btn custom-btn-close" outlined @click="sheet = !sheet">
                             {{$t("close")}}
                         </v-btn>
                         <pf-TextAnim class="TextAnim" style="color:#3E3E3E !important;"/>
-                        <h3 class="">{{ $t("PresentationHomePage.Titre") }}</h3>
+                        <h3 class="TitreH3">{{ $t("PresentationHomePage.Titre") }}</h3>
                         <br />
+                        <!-- 1ER INFORMATION -->
                         <v-card class="VCardComp" color="">
                             <v-card class="mt-0 rounded-0" color="#3E3E3E">
-                                <h3 class="ColorWhiteTitre">{{$t("PreSkills")}}</h3>
-                                <v-card-text min-height="70" align="center" class="text--primary">
+                                <h3 class="ColorWhiteTitre">{{$t("TexteHistoireMZL.TitreHistoire")}}</h3>
+                                <v-card-text min-height="70" align="left" class="text--primary indented-text">
                                     <v-row justify="center">
-                                        <v-col color="" cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" width="57px" src="@/assets/logo-soft/rhino_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Rhino</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col color="" cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" width="57px" src="@/assets/logo-soft/archicad_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Archicad</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" width="57px" src="@/assets/logo-soft/enscape_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Enscape</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/autocad_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Autocad</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto" >
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/revit_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Revit</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/vray_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>V-Ray</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/photoshop_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>Photoshop</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto">
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/indesign_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>InDesign</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto" >
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/pencil_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>{{$t("PreHandDrawn")}}</span>
-                                            </v-tooltip>
-                                        </v-col>
-                                        <v-col cols="2" md="auto" >
-                                            <v-tooltip bottom>
-                                                <template v-slot:activator="{on, attrs}">
-                                                    <v-img class="LogoLogi" src="@/assets/logo-soft/build_50px_50px.png" v-on="on" v-bind="attrs"/>
-                                                </template>
-                                                <span>{{$t("PreModel")}}</span>
-                                            </v-tooltip>
+                                        <v-col color="" cols="12" md="auto">
+                                            <p class="mb-4 text-body-1">{{$t("TexteHistoireMZL.ParaHistoire")}}</p>
+                                            <p class="mb-4 text-body-1">{{$t("TexteHistoireMZL.ParaHistoire1")}}</p>
+                                            <p class="text-body-1">{{$t("TexteHistoireMZL.ParaHistoire2")}}</p>
                                         </v-col>
                                     </v-row>
                                 </v-card-text>
                             </v-card>
                         </v-card>
-                        <v-timeline class="text-center">
-                            <v-timeline-item class="mt-3" icon="mdi-school" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold " slot="opposite">{{$t("PreTimelineDate06")}}</span>
-                                <v-card class="VCardComp">
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre06")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>{{$t("PreTimelineDescr06")}}</p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                            <v-timeline-item class="mt-3" icon="mdi-briefcase-variant" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate07")}}</span>
-                                <v-card class="VCardComp" >
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre07")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>
-                                                {{$t("PreTimelineDescr07")}}<br />
-                                                {{$t("PreTimelineDescr07_1")}}
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                            <v-timeline-item class="mt-3" icon="mdi-school" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate01")}}</span>
-                                <v-card class="VCardComp" >
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre01")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>{{$t("PreTimelineDescr01")}}</p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                            <v-timeline-item class="mt-3" icon="mdi-briefcase-variant" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate05")}}</span>
-                                <v-card class="VCardComp" >
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre05")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>
-                                                {{$t("PreTimelineDescr05")}}<br />
-                                                {{$t("PreTimelineDescr05_1")}}
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                             <v-timeline-item icon="mdi-account-tie" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate02")}}</span>
-                                <v-card class="VCardComp">
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre02")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>
-                                                {{$t("PreTimelineDescr02")}}<br />
-                                                {{$t("PreTimelineDescr02_1")}}<br />
-                                                {{$t("PreTimelineDescr02_2")}}
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                            <v-timeline-item icon="mdi-account-tie" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate03")}}</span>
-                                <v-card class="VCardComp">
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre03")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>
-                                                {{$t("PreTimelineDescr03")}}<br />
-                                                {{$t("PreTimelineDescr03_1")}}<br />
-                                                {{$t("PreTimelineDescr03_2")}}
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
-                            <v-timeline-item icon="mdi-briefcase-variant" color="#B5BCAF" fill-dot>
-                                <span class="font-weight-bold" slot="opposite">{{$t("PreTimelineDate04")}}</span>
-                                <v-card class="VCardComp">
-                                    <v-card class='rounded-0' color="#3E3E3E">
-                                        <h3 class="ColorWhiteTitre">{{$t("PreTimelineTitre04")}}</h3>
-                                        <v-card-text class="text--primary">
-                                            <p>
-                                                {{$t("PreTimelineDescr04")}}<br>
-                                                {{$t("PreTimelineDescr04_1")}}
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-card>
-                            </v-timeline-item>
+                        <!-- 2EME INFORMATION -->
+                         <v-timeline class="text-center">
+                        <v-card class="VCardComp" color="">
+                            <v-card class="mt-0 rounded-0" color="#3E3E3E">
+                                <h3 class="ColorWhiteTitre">{{$t("TexteCompMZL.TitreComp")}}</h3>
+                                <v-card-text min-height="70" align="left" class="text--primary indented-text">
+                                    <v-row justify="center">
+                                        <v-col color="" cols="12" md="auto">
+                                            <h1 class="mb-4 text-body-1 ParaCompTitre">{{$t("TexteCompMZL.ParaCompTitre1")}}</h1>
+                                            <p class="mb-4 text-body-1">{{$t("TexteCompMZL.ParaComp1")}}</p>
+                                            <br />
 
-                            <v-col cols="12">
-                                <span class="font-weight-bold">{{$t("downloadcv")}}</span>
-                            </v-col>
-                                <v-btn icon="" elevation="5" rounded class="ma-0" target="_blank" :href="require('@/assets/cv/MAZAL_Mathieu.pdf')"><v-timeline-item class="mt-5" icon="mdi-cloud-download-outline" color="#B5BCAF" fill-dot></v-timeline-item></v-btn>
-                            </v-timeline>
+                                            <h1 class="mb-4 text-body-1 ParaCompTitre">{{$t("TexteCompMZL.ParaCompTitre2")}}</h1>
+                                            <p class="mb-4 text-body-1">{{$t("TexteCompMZL.ParaComp2")}}</p>
+                                            <br />
+
+                                            <h1 class="mb-4 text-body-1 ParaCompTitre">{{$t("TexteCompMZL.ParaCompTitre3")}}</h1>
+                                            <p class="mb-4 text-body-1">{{$t("TexteCompMZL.ParaComp3")}}</p>
+                                            <br />
+
+                                            <h1 class="mb-4 text-body-1 ParaCompTitre">{{$t("TexteCompMZL.ParaCompTitre4")}}</h1>
+                                            <p class="mb-4 text-body-1">{{$t("TexteCompMZL.ParaComp4")}}</p>
+                                            <br />
+
+                                            <h1 class="mb-4 text-body-1 ParaCompTitre">{{$t("TexteCompMZL.ParaCompTitre5")}}</h1>
+                                            <p class="mb-4 text-body-1">{{$t("TexteCompMZL.ParaComp5")}}</p>
+                                            <br />
+
+                                            <i class="text-body-1">{{$t("TexteCompMZL.ParaCompFin")}}</i>
+                                        </v-col>
+                                    </v-row>
+                                </v-card-text>
+                            </v-card>
+                        </v-card>
+                        <br />
+                        <!-- 3EME INFORMATION -->
+                        </v-timeline>
                         </v-card>
                     </v-container>
                 </div>
@@ -252,6 +118,16 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.TitreH3 {
+  color:rgba(62, 62, 62, 1) !important;
+}
+.ParaCompTitre {
+  font-size: 1.3em !important;
+  font-weight: bold;
+}
+.indented-text p {
+  text-indent: 2em !important;
+}
 .text--primary {
     background: #B5BCAF;
 }
@@ -286,7 +162,7 @@ export default Vue.extend({
 /* Boutons stylisés */
 .custom-btn {
   background: rgba(245, 241, 235, 1) !important;
-  color: rgba(62, 62, 62, 1);
+  color: rgba(62, 62, 62, 1) ;
   font-size: 1.1em;
   font-weight: bold;
   padding: 12px 24px;
@@ -307,6 +183,7 @@ export default Vue.extend({
 }
 
 .section-divider {
+  background: rgba(245, 241, 235, 1) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,6 +195,27 @@ export default Vue.extend({
 
 .section-divider::before,
 .section-divider::after {
+  content: "";
+  height: 2px;
+  background: #333;
+  flex-grow: 1;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  max-width: 70px !important;
+}
+
+.section-divider-HC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 10 10px; /* Espace de 10px de chaque côté */
+  box-sizing: border-box;
+}
+
+.section-divider-HC::before,
+.section-divider-HC::after {
   content: "";
   height: 2px;
   background: #333;

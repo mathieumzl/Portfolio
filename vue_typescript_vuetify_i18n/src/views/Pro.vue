@@ -1,4 +1,4 @@
-<template>
+<template id="home">
   <div class="Pro">
     <pf-header-pro/>
     <page-pro class="mt-16"/>

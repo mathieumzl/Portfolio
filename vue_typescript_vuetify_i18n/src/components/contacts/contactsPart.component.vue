@@ -1,56 +1,56 @@
 <template>
-  <div>
-    <form ref="form" @submit.prevent="sendEmail">
-      <v-row justify="center">
-          <v-col class="FormContact mt-4 mb-3" cols="12" sm="10" md="8" lg="6">
-              <h1 class="section-divider TitreH3">{{$t('HeaderContact')}}</h1>
-              <span class="HeaderContactDesc">{{ $t("HeaderContactDesc") }}</span>
-            <a target="_blank" style="text-decoration: none;" class="mb-12" href="mailto:contact@mazal-mathieu.fr">
-              <h4 class="TitreMail">{{ $t("E-mail") }}</h4>
-            </a>
-            <v-card class="mt-7 mb-10 FormulaireRapideProCadre" outlined>
-              <v-card class='rounded-0'>
-                <h3 class="FormulaireRapidePro">{{ $t("SpeedForm.NameForm") }}</h3>
-              </v-card>
-              <v-card-text>
-                <v-text-field dense v-model="name" :error-messages="nameErrors" :label="$t('SpeedForm.FullName')" required type="text" name="from_name">
-                </v-text-field>
-                <v-text-field dense v-model="societe" :label="$t('SpeedForm.Society')" type="text" name="from_societe">
-                </v-text-field>
-                <v-text-field dense v-model="adresse" :label="$t('SpeedForm.Address')" type="text" name="from_adresse">
-                </v-text-field>
-                <v-text-field dense v-model="email" :error-messages="emailErrors" :label="$t('SpeedForm.E-mail')" required type="email" name="user_email" @input="$v.email.$touch()" @blur="$v.email.$touch()">
-                </v-text-field>
-                <v-select dense v-model="select" :error-messages="selectErrors" :items="items" :label="$t('SpeedForm.Service')" required type="text" name="user_services" @change="$v.select.$touch()" @blur="$v.select.$touch()">
-                </v-select>
-                <v-textarea dense rows="3" v-model="message" :label="$t('SpeedForm.Message')" type="text" name="message" required>
-                </v-textarea>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn class="custom-btn-formpro" @click="clear">
-                  {{ $t("clear") }}
-                </v-btn>
-                <v-spacer></v-spacer>
-                <v-btn class="custom-btn-formpro" type="submit" value="Send" :disabled="invalid">
-                  {{ $t("submit") }}
-                </v-btn>
-                <v-overlay :z-index="zIndex" :value="overlay">
-                  <v-progress-circular indeterminate size="64"></v-progress-circular>
-                </v-overlay>
-                <v-snackbar class="snackbar-pop" color="#3E3E3E" outlined :timeout="timeout" v-model="snackbar">
-                    <p class="text-center">{{ $t("SpeedForm.SendForm") }}</p>
-                  <v-btn class="custom-btn-formpro-close" v-bind="attrs" @click="snackbar = false, overlay = false">
-                    {{ $t("close") }}
+    <div>
+      <form ref="form" @submit.prevent="sendEmail">
+        <v-row justify="center">
+            <v-col class="FormContact mt-4 mb-3" cols="12" sm="10" md="8" lg="6">
+                <h1 class="section-divider TitreH3">{{$t('HeaderContact')}}</h1>
+                <span class="HeaderContactDesc">{{ $t("HeaderContactDesc") }}</span>
+              <a target="_blank" style="text-decoration: none;" class="mb-12" href="mailto:contact@mazal-mathieu.fr">
+                <h4 class="TitreMail">{{ $t("E-mail") }}</h4>
+              </a>
+              <v-card class="mt-7 mb-10 FormulaireRapideProCadre" outlined>
+                <v-card class='rounded-0'>
+                  <h3 class="FormulaireRapidePro">{{ $t("SpeedForm.NameForm") }}</h3>
+                </v-card>
+                <v-card-text>
+                  <v-text-field dense v-model="name" :error-messages="nameErrors" :label="$t('SpeedForm.FullName')" required type="text" name="from_name">
+                  </v-text-field>
+                  <v-text-field dense v-model="societe" :label="$t('SpeedForm.Society')" type="text" name="from_societe">
+                  </v-text-field>
+                  <v-text-field dense v-model="adresse" :label="$t('SpeedForm.Address')" type="text" name="from_adresse">
+                  </v-text-field>
+                  <v-text-field dense v-model="email" :error-messages="emailErrors" :label="$t('SpeedForm.E-mail')" required type="email" name="user_email" @input="$v.email.$touch()" @blur="$v.email.$touch()">
+                  </v-text-field>
+                  <v-select dense v-model="select" :error-messages="selectErrors" :items="items" :label="$t('SpeedForm.Service')" required type="text" name="user_services" @change="$v.select.$touch()" @blur="$v.select.$touch()">
+                  </v-select>
+                  <v-textarea dense rows="3" v-model="message" :label="$t('SpeedForm.Message')" type="text" name="message" required>
+                  </v-textarea>
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn class="custom-btn-formpro" @click="clear">
+                    {{ $t("clear") }}
                   </v-btn>
-                </v-snackbar>
-              </v-card-actions>
-              <h5 class="font-weight-regular font-italic ml-4 text-lg-left" >{{ $t("SpeedForm.Info") }}</h5>
-            </v-card>
-          </v-col>
-      </v-row>
-    </form>
-  </div>
-</template>
+                  <v-spacer></v-spacer>
+                  <v-btn class="custom-btn-formpro" type="submit" value="Send" :disabled="invalid">
+                    {{ $t("submit") }}
+                  </v-btn>
+                  <v-overlay :z-index="zIndex" :value="overlay">
+                    <v-progress-circular indeterminate size="64"></v-progress-circular>
+                  </v-overlay>
+                  <v-snackbar class="snackbar-pop" color="#3E3E3E" outlined :timeout="timeout" v-model="snackbar">
+                      <p class="text-center">{{ $t("SpeedForm.SendForm") }}</p>
+                    <v-btn class="custom-btn-formpro-close" v-bind="attrs" @click="snackbar = false, overlay = false">
+                      {{ $t("close") }}
+                    </v-btn>
+                  </v-snackbar>
+                </v-card-actions>
+                <h5 class="font-weight-regular font-italic ml-4 text-lg-left" >{{ $t("SpeedForm.Info") }}</h5>
+              </v-card>
+            </v-col>
+        </v-row>
+      </form>
+    </div>
+  </template>
 <script>
 import Vue from 'vue'
 import emailjs from '@emailjs/browser'
@@ -93,7 +93,7 @@ export default Vue.extend({
   }),
   created: function () {
     // Récupérer les prestations
-    const prestations = i18n.t('PrestationsPro') // Récupère toutes les prestations
+    const prestations = i18n.t('PrestationsPart') // Récupère toutes les prestations
     if (Array.isArray(prestations)) {
       // Si PrestationsPro est un tableau, on récupère les titres
       this.items = prestations.map((item) => item.title) // Extrait les titres des prestations
