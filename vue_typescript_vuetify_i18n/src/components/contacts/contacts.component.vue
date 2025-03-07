@@ -1,115 +1,253 @@
 <template>
-<div fluid pa-0>
-    <v-container fluid pa-0>
-        <v-divider color="white"/>
-        <v-divider color="white"/>
-        <div max-height="10px">
-            <v-parallax dark src="@/assets/parallax/parallax.png">
-            <v-card flat color="transparent" align="center" >
-            <v-row>
-                <v-col class="mb-10" cols="12">
-                    <v-card-title class="text-decoration-underline mt-n10 justify-center">
-                        <h1 class="title-contact">{{$t('HeaderContact')}}</h1>
-                    </v-card-title>
-                    <a target="_blank" style="text-decoration: none;" class="black--text" href="mailto:contact@mazal-mathieu.fr">
-                      <h4>contact@mazal-mathieu.fr</h4>
-                    </a>
-                </v-col>
-                <v-col cols="4" color="transparent">
-                    <a style="text-decoration: none;" target="_blank" href="https://www.linkedin.com/in/mathieu-mazal-51b130124/">
-                        <v-card-text align="center !important" class="hvr-logo">
-                            <v-img align="center !important" width="220px" src="@/assets/logo_contacts/Linkb.png" ></v-img>
-                            <h3 class="v-toolbar__title title-contact white--text pl-0">Linkedin</h3>
-                        </v-card-text>
-                    </a>
-                </v-col>
-                <v-col cols="4" color="transparent">
-                    <a style="text-decoration: none;" target="_blank" href="https://www.instagram.com/mathieumzl/">
-                        <v-card-text align="center !important" class="hvr-logo">
-                            <v-img align="center !important" width="220px" src="@/assets/logo_contacts/Instab.png" ></v-img>
-                            <h3 class="v-toolbar__title title-contact white--text pl-0">Instagram</h3>
-                        </v-card-text>
-                    </a>
-                </v-col>
-                <v-col cols="4" color="transparent">
-                    <a style="text-decoration: none;" target="_blank" href="https://www.artstation.com/mathieu_mazal">
-                        <v-card-text align="center !important" class="hvr-logo">
-                            <v-img align="center !important" width="220px" src="@/assets/logo_contacts/artstationb.png" ></v-img>
-                            <h3 class="v-toolbar__title title-contact white--text pl-0">Artstation</h3>
-                        </v-card-text>
-                    </a>
-                </v-col>
-            </v-row>
+  <div>
+    <form ref="form" @submit.prevent="sendEmail">
+      <v-row justify="center">
+          <v-col class="FormContact mt-4 mb-3" cols="12" sm="10" md="8" lg="6">
+              <h1 class="section-divider TitreH3">{{$t('Contact')}}</h1>
+              <span class="HeaderContactDesc">{{ $t("HeaderContactDesc") }}</span>
+            <a target="_blank" style="text-decoration: none;" class="mb-12" href="mailto:contact@mazal-mathieu.fr">
+              <h4 class="TitreMail">{{ $t("E-mail") }}</h4>
+            </a>
+            <v-card class="mt-7 mb-10 FormulaireRapideProCadre" outlined>
+              <v-card class='rounded-0'>
+                <h3 class="FormulaireRapidePro">{{ $t("SpeedForm.NameForm") }}</h3>
+              </v-card>
+              <v-card-text>
+                <v-text-field dense v-model="name" :error-messages="nameErrors" :label="$t('SpeedForm.FullName')" required type="text" name="from_name">
+                </v-text-field>
+                <v-text-field dense v-model="societe" :label="$t('SpeedForm.Society')" type="text" name="from_societe">
+                </v-text-field>
+                <v-text-field dense v-model="adresse" :label="$t('SpeedForm.Address')" type="text" name="from_adresse">
+                </v-text-field>
+                <v-text-field dense v-model="email" :error-messages="emailErrors" :label="$t('SpeedForm.E-mail')" required type="email" name="user_email" @input="$v.email.$touch()" @blur="$v.email.$touch()">
+                </v-text-field>
+                <v-select dense v-model="select" :items="items" v-show="false"></v-select>
+                <input type="hidden" v-model="select" name="user_services">
+                <v-textarea dense rows="3" v-model="message" :label="$t('SpeedForm.Message')" type="text" name="message" required>
+                </v-textarea>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn class="custom-btn-formpro" @click="clear">
+                  {{ $t("clear") }}
+                </v-btn>
+                <v-spacer></v-spacer>
+                <v-btn class="custom-btn-formpro" type="submit" value="Send" :disabled="invalid">
+                  {{ $t("submit") }}
+                </v-btn>
+                <v-overlay :z-index="zIndex" :value="overlay">
+                  <v-progress-circular indeterminate size="64"></v-progress-circular>
+                </v-overlay>
+                <v-snackbar class="snackbar-pop" color="#3E3E3E" outlined :timeout="timeout" v-model="snackbar">
+                    <p class="text-center">{{ $t("SpeedForm.SendForm") }}</p>
+                  <v-btn class="custom-btn-formpro-close" v-bind="attrs" @click="snackbar = false, overlay = false">
+                    {{ $t("close") }}
+                  </v-btn>
+                </v-snackbar>
+              </v-card-actions>
+              <h5 class="font-weight-regular font-italic ml-4 text-lg-left" >{{ $t("SpeedForm.Info") }}</h5>
             </v-card>
-    </v-parallax>
-    </div>
-  <v-divider color="white"/>
-  <v-divider color="white"/>
-    </v-container>
-</div>
+          </v-col>
+      </v-row>
+    </form>
+  </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue'
+import emailjs from '@emailjs/browser'
+import { validationMixin } from 'vuelidate'
+import { required, email } from 'vuelidate/lib/validators'
+import i18n from '@/i18n'
 
 export default Vue.extend({
+  mixins: [validationMixin],
+  validations: {
+    name: { required },
+    email: { required, email },
+    select: { required },
+    checkbox: {
+      checked (val) {
+        return val
+      }
+    }
+  },
+  data: () => ({
+    invalid: false,
+    timeout: 10000,
+    dialog: false,
+    validate: '',
+    overlay: false,
+    zIndex: 0,
+    valid: true,
+    snackbar: false,
+    name: '',
+    adresse: '',
+    societe: '',
+    email: '',
+    message: '',
+    select: 'Page de contact',
+    items: [],
+    checkbox: false,
+    return: {
+      text: null
+    }
+  }),
+  computed: {
+    checkboxErrors () {
+      const errors = []
+      if (!this.$v.checkbox.$dirty) return errors
+      !this.$v.checkbox.checked && errors.push('You must agree to continue!')
+      return errors
+    },
+    selectErrors () {
+      const errors = []
+      if (!this.$v.select.$dirty) return errors
+      if (!this.select) errors.push('Service is required')
+      return errors
+    },
+    nameErrors () {
+      const errors = []
+      if (!this.$v.name.$dirty) return errors
+      !this.$v.name.required && errors.push('Name is required.')
+      return errors
+    },
+    emailErrors () {
+      const errors = []
+      if (!this.$v.email.$dirty) return errors
+      !this.$v.email.email && errors.push('Must be valid e-mail')
+      !this.$v.email.required && errors.push('E-mail is required')
+      return errors
+    }
+  },
+  methods: {
+    isValid () {
+      return this.name !== '' && this.email !== '' && this.message !== '' && this.select !== null && this.valid
+    },
+    sendEmail () {
+      this.$v.$touch() // Force la validation des champs avant d'envoyer
+      if (!this.isValid()) return
+      this.overlay = true
+      emailjs.sendForm('service_gd7g9by', 'template_w6w5j2r', this.$refs.form, 'O8Bauw8Gs7ykLrpHH')
+        .then((result) => {
+          console.log('SUCCESS!', this.snackbar = true, result.text)
+          this.overlay = false
+          this.clear()
+        }, (error) => {
+          console.log('FAILED...', error.text)
+        })
+    },
+    clear () {
+      this.$v.$reset()
+      this.name = ''
+      this.email = ''
+      this.message = ''
+      this.adresse = ''
+      this.societe = ''
+      this.select = null
+      this.valid = true
+    }
+  }
 })
 </script>
 <style>
-.parallax {
-    max-height: 10px !important
+.HeaderContactDesc {
+  font-size: 0.7em !important; /* Réduit la taille du texte */
+  color: rgba(62, 62, 62, 1) !important; /* Couleur du texte */
+  font-style: italic !important; /* Met le texte en italique */
+  margin-bottom: 5px !important;
+  max-width: 550px !important; /* Fixe la largeur du texte à 100px */
+  overflow: hidden; /* Cache le texte qui dépasse de 100px */
+  text-overflow: ellipsis; /* Affiche "..." si le texte dépasse la largeur définie */
+  display: inline-block !important; /* Assure un comportement de type bloc tout en permettant une largeur définie */
+  }
+
+.snackbar-pop {
+  position: fixed !important;
+  left: 0% !important;
+  bottom: 40% !important;
 }
-@-webkit-keyframes hvr-logo {
-    0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-    }
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-
-  @-webkit-keyframes hvr-logo-float {
-    100% {
-      -webkit-transform: translateY(-8px);
-      -webkit-filter: brightness(150%);
-
-      transform: translateY(-8px);
-    }
-  }
-
-  .hvr-logo:hover, .hvr-logo:focus, .hvr-logo:active {
-    -webkit-animation-name: hvr-blogoob-float, hvr-logo;
-    animation-name: hvr-logo-float, hvr-logo;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-  }
-.title-contact {
-  font-family:'Consolas';
-  height: 40px;
-  background-color: #2c2b2c;
-  background-image: linear-gradient(360deg, #2c2b2c, #2c2b2c);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+/* Boutons stylisés */
+.custom-btn-formpro {
+  background: rgba(245, 241, 235, 1) !important;
+  color: rgba(62, 62, 62, 1) !important;
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  padding: 12px 24px !important;
+  border: 2px solid rgba(62, 62, 62, 1) !important;
+  transition: all 0.3s ease-in-out !important;
+  text-transform: uppercase !important;
 }
-.text-decoration-underline {
-    color: #2c2b2c;
+.custom-btn-formpro-close:hover,
+.custom-btn-formpro:hover {
+  transform: scale(1.08) !important;
+}
+.custom-btn-formpro-close {
+  background: rgba(245, 241, 235, 1) !important;
+  color: rgba(62, 62, 62, 1) !important;
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  padding: 12px 24px !important;
+  border: 2px solid rgba(62, 62, 62, 1) !important;
+  transition: all 0.3s ease-in-out !important;
+  text-transform: uppercase !important;
+  margin: 0 auto;
+  display: flex;
+}
+
+.custom-btn-formpro-overlay {
+  background: rgba(245, 241, 235, 1) !important; /* Couleur de fond */
+  color: rgba(62, 62, 62, 1) !important; /* Couleur du texte */
+  border: 2px solid rgba(62, 62, 62, 1) !important;
+}
+
+.FormulaireRapidePro {
+  color: rgba(62, 62, 62, 1) !important;
+  background-color: rgba(181, 188, 175, 1) !important;
+  border-bottom: 4px solid rgba(62, 62, 62, 1) !important;
+}
+.FormulaireRapideProCadre {
+  border: 4px solid #3e3e3e !important;
+}
+.FormContact {
+  width: 100%;  /* Utilise toute la largeur disponible */
+  max-width: 800px; /* Limite la largeur maximale */
+  margin: auto; /* Centre le formulaire */
+  padding: 20px; /* Ajoute un peu d'espace */
+}
+.TitreMail,
+.TitreH3 {
+  color:rgba(62, 62, 62, 1) !important;
+}
+.TitreMail:hover {
+  color:rgba(163, 106, 74, 1) !important;
+  transform: scale(1.02) !important;
+}
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 10 10px; /* Espace de 10px de chaque côté */
+  box-sizing: border-box;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  height: 2px;
+  background: #333;
+  flex-grow: 1;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  max-width: 170px !important;
+}
+
+.section-divider span {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 30px; /* Espace autour du texte */
+  background: white; /* Pour cacher la ligne derrière le texte */
 }
 </style>

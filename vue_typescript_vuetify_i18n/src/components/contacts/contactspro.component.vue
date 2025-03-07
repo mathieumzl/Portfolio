@@ -3,7 +3,7 @@
     <form ref="form" @submit.prevent="sendEmail">
       <v-row justify="center">
           <v-col class="FormContact mt-4 mb-3" cols="12" sm="10" md="8" lg="6">
-              <h1 class="section-divider TitreH3">{{$t('HeaderContact')}}</h1>
+              <h1 class="section-divider TitreH3">{{$t('Contact')}}</h1>
               <span class="HeaderContactDesc">{{ $t("HeaderContactDesc") }}</span>
             <a target="_blank" style="text-decoration: none;" class="mb-12" href="mailto:contact@mazal-mathieu.fr">
               <h4 class="TitreMail">{{ $t("E-mail") }}</h4>

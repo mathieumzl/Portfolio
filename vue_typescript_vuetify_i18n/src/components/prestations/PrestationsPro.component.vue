@@ -7,7 +7,7 @@
       <!-- Affichage des prestations -->
       <v-row class="justify-center CartePrestations">
         <v-col cols="12" sm="10" :md="mdt" v-for="(item, i) in PrestationsPro" :key="i">
-          <v-card class="custom-card" @click="fillForm(item)">
+          <v-card class="custom-card" @click="scrollTo('#contacts')">
             <v-row class="card-content">
               <!-- Colonne 1 -->
               <v-col cols="12" md="4" class="text-left">
@@ -48,6 +48,19 @@ export default Vue.extend({
   computed: {
     PrestationsPro (): Array<any> {
       return i18n.t('PrestationsPro') as unknown as Array<any>
+    }
+  },
+  methods: {
+    scrollTo (targetId) {
+      const element = document.querySelector(targetId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  },
+  mounted () {
+    if (window.location.hash) {
+      this.scrollTo(window.location.hash)
     }
   }
 })
@@ -136,6 +149,7 @@ export default Vue.extend({
     font-size: 0.9em;
     font-style: italic;
     margin-top: -10px;
+    color: #3e3e3e;
 }
 
 .card-desc {

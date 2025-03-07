@@ -16,16 +16,12 @@
       <v-card class="v-card-pop-choix" >
         <v-card-title class="minimal-btn-titre-choix">{{$t('HomePageBtnProjetVous')}}</v-card-title>
         <v-card-text class="v-card-text-choix">
-          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/particuliers">
-            <v-btn class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
+            <v-btn href="/particuliers"  class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
               {{$t('HomePageBtnParticulier')}}
             </v-btn>
-          </router-link>
-          <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/pro">
-            <v-btn class="minimal-btn-choix" outlined large @click="redirect('/pro')">
+            <v-btn href="/pro" class="minimal-btn-choix" outlined large @click="redirect('/pro')">
               {{$t('HomePageBtnParofessionnel')}}
             </v-btn>
-          </router-link>
         </v-card-text>
         <v-card-actions class="justify-end">
           <v-btn text @click="showDialog = false">{{$t('return')}}</v-btn>
@@ -71,8 +67,9 @@ export default Vue.extend({
 <style lang="css" scoped>
 .minimal-btn-titre-choix {
   flex-direction: column !important;
-  font-size: 2em !important;
+  font-size: 14px 2em 20px!important;
   margin-bottom: 0.4em;
+  white-space: nowrap;
 }
 .v-card-pop-choix {
   background: rgba(245, 241, 235, 0.9) !important;
@@ -87,7 +84,7 @@ export default Vue.extend({
 .minimal-btn-choix {
   flex: 1; /* Permet aux boutons de prendre toute la largeur disponible */
   width: 100%;
-  font-size: 2vh !important;
+  font-size: 10px 2vh 20px !important;
   max-width: 250px !important; /* Évite que ça s'étire trop */
   padding: 1em 3em !important;
   text-align: center !important;

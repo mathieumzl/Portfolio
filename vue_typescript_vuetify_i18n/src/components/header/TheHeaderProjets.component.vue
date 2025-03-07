@@ -28,21 +28,23 @@
               <a class="TitreHP">{{$t('HeaderAccueil')}}</a>
             </router-link>
             <!-- Présentations/ L'atelier / L'agence -->
-            <a class="nav_menu mr-4" style="color:white !important" @click="scrollTo('#present')"><a class="TitreHP">{{$t('HeaderPresentation')}}</a></a>
+            <a href="/#present" class="TitreHP nav_menu mr-5">{{$t('HeaderPresentation')}}</a>
             <!-- Projet / Realisation -->
             <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/projets">
-              <a @click="scrollTo('#home')" class="TitreHPPro">{{$t('HeaderRealisations')}}</a>
+              <a href="/projets" @click="scrollTo('#home')" class="TitreHPPro">{{$t('HeaderRealisations')}}</a>
             </router-link>
-              <!-- Particuliers -->
-              <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/particuliers">
-                  <a class="TitreHP">{{$t('SpacePart')}}</a>
-              </router-link>
-              <!-- Professionnels -->
-              <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/pro">
-                  <a class="TitreHP">{{$t('SpacePro')}}</a>
-              </router-link>
+            <!-- Particuliers -->
+            <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/particuliers">
+                <a class="TitreHP">{{$t('SpacePart')}}</a>
+            </router-link>
+            <!-- Professionnels -->
+            <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/pro">
+                <a class="TitreHP">{{$t('SpacePro')}}</a>
+            </router-link>
             <!-- Contact -->
-            <a class="nav_menu mr-4" color="transparent" style="color:white !important" @click="scrollTo('#contacts')"><a class="TitreHP">{{$t('HeaderContact')}}</a></a>
+            <router-link  @click="scrollTo('#contacts')" class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/contact">
+                <a class="TitreHP">{{$t('HeaderContact')}}</a>
+            </router-link>
             <!--<h4 class="nav_menu mr-4">|</h4>-->
             <pf-locale/>
           </v-app-bar>
@@ -50,32 +52,51 @@
         <v-list class="mt-10" nav dense>
           <img src="@/assets/logo_.png" alt="Logo" class="logo-header-ham">
           <v-list-item-group active-class="text--accent-4">
-              <a class="mr-4 section-divider-menu" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h3>{{$t('HeaderPresentationMenu')}}</h3></a>
+            <a class="mr-4 section-divider-menu" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h3>{{$t('HeaderPresentationMenu')}}</h3></a>
+          <!-- Accueil -->
             <v-list-item  @click="drawer = false">
               <v-list-item-icon>
-                <v-icon color="#3E3E3E">mdi-account-tie-voice</v-icon>
+                <v-icon color="#3E3E3E">mdi-home-outline</v-icon>
               </v-list-item-icon>
-              <a class="mr-4" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h4>{{$t('HeaderPresentation')}}</h4></a>
-            </v-list-item>
-            <v-list-item @click="drawer = false">
-              <v-list-item-icon>
-                <v-icon color="rgba(62, 62, 62, 1)">mdi-fountain-pen-tip</v-icon>
-              </v-list-item-icon>
-              <a class="mr-4" style="color:#3E3E3E  !important" @click="scrollTo('#contacts')"><h4>{{$t('HeaderContact')}}</h4></a>
-            </v-list-item>
-            <v-list-item @click="drawer = false">
-              <v-list-item-icon>
-                <v-icon color="rgba(62, 62, 62, 1)">mdi-presentation</v-icon>
-              </v-list-item-icon>
-              <a class="mr-4" color="transparent" style="color:#3E3E3E  !important" @click="scrollTo('#projects')"><h4>{{$t('HeaderProjets')}}</h4></a>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon color="rgba(62, 62, 62, 1)">mdi-account-multiple-check-outline</v-icon>
-              </v-list-item-icon>
-                <a class="mr-4" align="left" color="transparent" style="text-decoration: none; color:#3E3E3E !important" href="https://www.mazal-mathieu.fr/#/pro" ><h4>{{$t('SpacePro')}}</h4></a>
-            </v-list-item>
-          </v-list-item-group>
+                <a href="/" @click="scrollTo('#home')" class="TitreHP">{{$t('HeaderAccueil')}}</a>
+          </v-list-item>
+          <!-- Présentations/ L'atelier / L'agence -->
+          <v-list-item @click="drawer = false">
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-presentation</v-icon>
+            </v-list-item-icon>
+            <a @click="scrollTo('#present')" href="/#present" class="TitreHP mr-5">{{$t('HeaderPresentation')}}</a>
+          </v-list-item>
+          <!-- Projet / Realisation -->
+          <v-list-item @click="drawer = false">
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-home-group-plus</v-icon>
+            </v-list-item-icon>
+            <a href="/projets" @click="scrollTo('#home')" class="TitreHPAccueil">{{$t('HeaderRealisations')}}</a>
+          </v-list-item>
+          <!-- Particuliers -->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-account-edit-outline</v-icon>
+            </v-list-item-icon>
+            <a  href="/particuliers" class="TitreHP">{{$t('SpacePart')}}</a>
+          </v-list-item>
+          <!-- Professionnels -->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-briefcase-edit-outline</v-icon>
+            </v-list-item-icon>
+            <a  href="/pro" class="TitreHP">{{$t('SpacePro')}}</a>
+          </v-list-item>
+          <!-- Contact -->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon color="rgba(62, 62, 62, 1)">mdi-card-account-mail-outline</v-icon>
+            </v-list-item-icon>
+            <a  href="/contact" class="TitreHP">{{$t('HeaderContact')}}</a>
+          </v-list-item>
+
+        </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
     </div>
@@ -87,8 +108,16 @@ export default Vue.extend({
     drawer: false
   }),
   methods: {
-    scrollTo: function (targetId) {
-      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' })
+    scrollTo (targetId) {
+      const element = document.querySelector(targetId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  },
+  mounted () {
+    if (window.location.hash) {
+      this.scrollTo(window.location.hash)
     }
   }
 })

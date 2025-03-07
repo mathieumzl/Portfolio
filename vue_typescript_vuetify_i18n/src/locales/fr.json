@@ -24,11 +24,9 @@
   "ChoixPrestationCarteProfessionnelsTexte": "En quête d’un collaborateur réactif et compétent ? J’intègre vos équipes en prestation pour la réalisation de plans techniques, 3D et rendus visuels, afin de concrétiser vos idées avec rigueur et créativité.",
   "ChoixPrestationCarteBtn": "Découvrir",
   "HeaderPartPresentation": "Présentation",
-  "HeaderPartContact": "Contact",
   "HeaderPartProjets" :"Projets vr",
   "SpacePro": "Professionnels",
   "HeaderProPresentation": "Présentation",
-  "HeaderProContact": "Contact",
   "HeaderProProjets" :"Projets vr",
   "downloadcv": "Télécharger le CV",
   "downloadcdr": "Carnet de recherche",
@@ -37,11 +35,12 @@
   "downloadPlanAPD": "Dossier APD",
   "downloadPlanPRODCE": "Dossier Pro/DCE",
   "message": "bonjoour i18n !!",
-  "TitleAllProject":"Projets",
+  "TitleAllProject":"PROJETS",
   "return": "RETOUR",
   "close": "Quitter",
   "submit": "Envoyer",
   "clear": "Effacer",
+  "Contact": "CONTACT",
   "PresentationHomePage": {
     "name":"MAZAL Mathieu",
     "Titre":"Architecture d'intérieur - Montpellier",
@@ -142,7 +141,7 @@
   },
   "TitleAllPrestations":"PRESTATIONS",
   "TitleAllPrestationsProDesc":"Découvrez les prestations sur mesure, adaptées à vos projets ponctuels ou à long terme, avec un engagement pour la qualité et votre satisfaction.",
-  "TitleAllPrestationsPartDesc": "h",
+  "TitleAllPrestationsPartDesc": "Découvrez une sélection de prestations pour réaménager et embellir vos espaces. Chaque service est conçu pour vous offrir des solutions fonctionnelles et esthétiques. Pour toute demande spécifique, n’hésitez pas à me contacter directement.",
   "Price": "Prix",
   "DailyRate":"Forfait journée",
   "PrestationsPro": [
@@ -195,28 +194,37 @@
   "PrestationsPart": [
     {
       "title": "Accompagnement Visite & Conseil",
-      "description": "Bénéficiez d’un regard avant d’acheter un bien.",
+      "description": "Bénéficiez d’un autre regard avant d’acheter un bien.",
       "NeedReinforcement": "Vous hésitez sur le potentiel d’un bien immobilier ?",
-      "details": "Visite sur place avec analyse des atouts et contraintes du bien. Conseils sur l’agencement, le potentiel d’optimisation et les éventuels travaux à prévoir. Estimation des coûts de rénovation et premières esquisses d’aménagement.",
+      "details": "Visite sur place avec analyse des atouts et contraintes du bien. Conseils sur l’agencement, le potentiel d’optimisation et les éventuels travaux à prévoir.",
+      "price": "À partir de 90€",
+      "dailyRate": "Montpellier et ses alentours",
+      "tag": "Conseil"
+    },
+    {
+      "title": "Accompagnement déco & Inspirations visuelles",
+      "description": "Obtenez des conseils déco personnalisés et une vision claire pour transformer votre intérieur.",
+      "NeedReinforcement": "Vous souhaitez donner du caractère à votre intérieur ?",
+      "details": "Je vous guide pour harmoniser votre décoration et faire les bons choix en fonction de vos envies et contraintes.",
       "price": "À partir de 120€",
       "dailyRate": "",
       "tag": "Conseil"
     },
     {
-      "title": "Étude Préliminaire",
-      "description": "Une première approche pour visualiser votre projet.",
-      "NeedReinforcement": "Vous souhaitez une base solide avant d'entamer les travaux ?",
-      "details": "Réalisation de plans d’aménagement et estimation du budget pour vous aider à prendre les bonnes décisions.",
-      "price": "À partir de 590€",
-      "dailyRate": "Varie selon la surface et la complexité",
-      "tag": "Planification"
+      "title": "Liste d'achats & Assistance personnalisée",
+      "description": "Trouvez les bons meubles et matériaux sans perdre de temps.",
+      "NeedReinforcement": "Vous ne savez pas où trouver le mobilier ou les objets déco idéaux ?",
+      "details": "Sélection personnalisée de meubles et accessoires adaptés à votre style et budget.",
+      "price": "À partir de 100€",
+      "dailyRate": "",
+      "tag": "Conseil"
     },
     {
       "title": "Conception 3D & Projection",
       "description": "Visualisation réaliste de votre projet avant travaux.",
       "NeedReinforcement": "Envie de voir votre futur intérieur en images ?",
-      "details": "Réalisation de plans techniques 2D et modélisation 3D photoréaliste avec proposition de matériaux, couleurs et mobiliers adaptés.",
-      "price": "À partir de 890€",
+      "details": "Réalisation de plans techniques 2D, modélisation 3D et rendu 3D avec proposition de matériaux, couleurs et mobiliers adaptés.",
+      "price": "À partir de 300€",
       "dailyRate": "Selon la superficie et la complexité technique du projet",
       "tag": "3D"
     },
@@ -225,33 +233,15 @@
       "description": "Prise en charge de vos obligations administratives.",
       "NeedReinforcement": "Des démarches compliquées à gérer ?",
       "details": "Réalisation du dossier administratif (déclaration préalable, permis de construire), création des pièces graphiques et suivi du dossier jusqu’à acceptation.",
-      "price": "À partir de 690€",
-      "dailyRate": "Selon la nature du projet",
+      "price": "Sur devis",
+      "dailyRate": "",
       "tag": "Administratif"
     },
     {
-      "title": "Tranquility : Gestion Complète du Projet",
-      "description": "Un accompagnement clé en main de A à Z.",
-      "NeedReinforcement": "Besoin d’un suivi intégral pour vos travaux ?",
-      "details": "Conception complète (plans techniques + 3D), consultation et mise en relation avec des artisans, analyse des devis et suivi des travaux jusqu’à la livraison.",
-      "price": "8 à 13% du coût total des travaux",
-      "dailyRate": "Tarif dégressif en fonction du budget global",
-      "tag": "Gestion"
-    },
-    {
-      "title": "Cuisine & Dressing Sur-Mesure",
-      "description": "Optimisation et design de votre cuisine ou dressing.",
-      "NeedReinforcement": "Besoin d’un espace parfaitement adapté à votre mode de vie ?",
-      "details": "Conception sur mesure avec optimisation du rangement, choix des matériaux et collaboration avec des artisans spécialisés pour une fabrication sur-mesure.",
-      "price": "Sur devis",
-      "dailyRate": "Selon la complexité et les matériaux choisis",
-      "tag": "Sur-Mesure"
-    },
-    {
       "title": "Demandes Spécifiques",
-      "description": "Pour des demandes spécifiques ou des projets uniques, contactez-nous pour des solutions personnalisées.",
-      "NeedReinforcement": "Besoin d’une prestation spécifique ?",
-      "details": "Que ce soit pour des services techniques, créatifs ou tout autre type de projet, nous sommes à votre disposition pour discuter de vos besoins. N’hésitez pas à nous contacter pour toute demande particulière : nous sommes prêts à vous proposer une solution sur mesure, quel que soit le domaine.",
+      "description": "Pour des projets uniques ou des besoins particuliers, contactez-moi pour des solutions sur-mesure.",
+      "NeedReinforcement": "Besoin d’un service personnalisé ?",
+      "details": "Que ce soit pour des conseils techniques, créatifs ou tout autre type de prestation, je suis à votre écoute pour discuter de vos envies. N’hésitez pas à me contacter pour toute demande spécifique : je vous proposerai une solution sur mesure, parfaitement adaptée à votre projet.",
       "price": "Sur devis",
       "dailyRate": "",
       "tag": "Forfait"
@@ -621,104 +611,6 @@
         "src1": [
           "ProjetPresentation/ProjetColocation/ProjetColocRecherche.png",
           "ProjetPresentation/ProjetColocation/ProjetColocAmenagement.png"
-        ]
-      }
-    },
-    "Project120": {
-      "name":"Salle à manger",
-      "description": "description",
-      "thumbnail_name": "ProjetPresentation/ProjetIllu3D.png",
-      "softwares": [
-        { "logo": "logo-soft/vray_50px_50px.png", "tooltip": "V-Ray"},
-        { "logo": "logo-soft/revit_50px_50px.png", "tooltip": "Revit"},
-        { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
-        { "logo": "logo-soft/pencil_50px_50px.png", "tooltip": "Dessin à la main"}
-        
-      ],
-      "tag" : "Student",
-      "v_sheet": {
-        "src": "ProjetPresentation/ProjetIllu3D/ProjetIlluRender.jpg",
-        "description": [
-          "Une habitation pour un couple où l’on devait retrouver une chambre, un coin salon, une salle à manger et une cuisine.",
-          "Projet effectué lors de mes études à l'ESDAC - Clermont-Ferrand en 2021"
-        ],
-        "src1": [
-          "ProjetPresentation/ProjetIllu3D/projetilluplan.jpg",
-          "ProjetPresentation/ProjetIllu3D/projetillucoupe.jpg"
-        ]
-      }
-    },
-    "Project130": {
-      "name":"Salle de bain",
-      "description": "Personal",
-      "thumbnail_name": "ProjetPresentation/projetsdb3d.png",
-      "tag" : "Personal",
-      "softwares": [
-        { "logo": "logo-soft/archicad_50px_50px.png", "tooltip": "Archicad"},
-        { "logo": "logo-soft/pencil_50px_50px.png", "tooltip": "Dessin à la main"}
-      ],
-      "v_sheet": {
-        "src": "ProjetPresentation/ProjetSDB/ProjetSDBrender.png",
-        "description": [
-          "Le projet de la salle de bain est un projet personnel où l’objectif était de la rénover en gardant le même espace.",
-          "Projet personnel effectué en 2021"
-        ],
-        "src1": [
-          "ProjetPresentation/ProjetSDB/ProjetSDBplan.png",
-          "ProjetPresentation/ProjetSDB/ProjetSDBdessin.png"
-        ]
-      }
-    },
-    "Project140": {
-      "name":"Parcours Urbain",
-      "description": "Student",
-      "thumbnail_name": "ProjetPresentation/projetparcourpres.png",
-      "softwares": [
-        { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"},
-        { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
-        { "logo": "logo-soft/build_50px_50px.png", "tooltip": "Maquette"},
-        { "logo": "logo-soft/pencil_50px_50px.png", "tooltip": "Dessin à la main"}
-      ],
-      "tag" : "Student",
-      "v_sheet": {
-        "src": "ProjetPresentation/ProjetParcoursUrbain/ProjetParcoursUrbPersSituation.png",
-        "description": [
-          "Le projet est situé devant l’Opéra de Clermont-Ferrand proche de la place de Jaude et ce porte sur la modularité et le théâtre.",
-          "J’ai réfléchi à l’interaction entre les visiteurs et sur l’usage qu’ils pouvaient proposer. Il devait par la même occasion s’adapter au lieu tout en proposant une expérience aux visiteurs.",
-          "Mon projet est divisé en deux modules offrant une modularité ce qui permet d’avoir une interaction et de créer une scène et un décor qui change avec le temps. La lumière créant des silhouettes au sol permettant de rendre la scène dynamique.",
-          "Projet effectué lors de mes études à l'ESDAC - Clermont-Ferrand en 2021"
-        ],
-        "src1": [
-          "ProjetPresentation/ProjetParcoursUrbain/ProjetParcoursUrbPlans.png",
-          "ProjetPresentation/ProjetParcoursUrbain/ProjetParcoursUrbCoupe.png",
-          "ProjetPresentation/ProjetParcoursUrbain/ProjetParcoursUrbPersZoom.png",
-          "ProjetPresentation/ProjetParcoursUrbain/ProjetParcoursUrbMaquettes.png"
-        ]
-      }
-    },
-    "Project150": {
-      "name":"Biblio Truck",
-      "description": "Student",
-      "thumbnail_name": "ProjetPresentation/projetbibliotpres.png",
-      "softwares": [
-        { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"},
-        { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
-        { "logo": "logo-soft/build_50px_50px.png", "tooltip": "Maquette"},
-        { "logo": "logo-soft/pencil_50px_50px.png", "tooltip": "Dessin à la main"}
-      ],
-      "tag" : "Student",
-      "v_sheet": {
-        "src": "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckPers.jpg",
-        "description": [
-          "Le projet se porte sur une bibliothèque mobile de 10 mètres de longueur et de 3 mètres de largeur.",
-          "Projet effectué lors de mes études à l'ESDAC - Clermont-Ferrand en 2020"
-        ],
-        "src1": [
-          "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckRenduPlanche.jpg",
-          "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckPlans.png",
-          "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckConcept.jpg",
-          "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckDetails.jpg",
-          "ProjetPresentation/ProjetBiblioTruck/ProjetBiblioTruckPersInt.jpg"
         ]
       }
     }

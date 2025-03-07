@@ -4,7 +4,7 @@
       <!-- Carte Particuliers -->
       <v-col cols="12" sm="11" md="6" lg="5">
         <v-card
-          href="https://www.mazal-mathieu.fr/#/particuliers"
+          href="/particuliers"
           class="service-card"
           elevation="10"
           :class="{ 'hover-effect': hoverParticulier }"
@@ -26,7 +26,7 @@
       <!-- Carte Professionnels -->
       <v-col cols="12" sm="11" md="6" lg="5">
         <v-card
-          href="https://www.mazal-mathieu.fr/#/pro"
+          href="/pro"
           class="service-card"
           elevation="10"
           :class="{ 'hover-effect': hoverPro }"

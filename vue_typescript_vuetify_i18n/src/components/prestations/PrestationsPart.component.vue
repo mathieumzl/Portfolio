@@ -7,7 +7,7 @@
       <!-- Affichage des prestations -->
       <v-row class="justify-center CartePrestations">
         <v-col cols="12" sm="10" :md="mdt" v-for="(item, i) in PrestationsPart" :key="i">
-          <v-card class="custom-card" @click="fillForm(item)">
+          <v-card class="custom-card" @click="scrollTo('#contacts')" >
             <v-row class="card-content">
               <!-- Colonne 1 -->
               <v-col cols="12" md="4" class="text-left">
@@ -24,7 +24,7 @@
               <!-- Colonne 3 -->
               <v-col cols="12" md="3" class="text-right">
                 <h3 v-if="item.price" class="card-title">{{$t('Price')}} : {{ item.price }}</h3>
-                <h3 v-if="item.dailyRate" class="card-title-desc">{{$t('DailyRate')}} : {{ item.dailyRate }}</h3>
+                <h3 v-if="item.dailyRate" class="card-title-desc">{{ item.dailyRate }}</h3>
               </v-col>
             </v-row>
           </v-card>
@@ -48,6 +48,19 @@ export default Vue.extend({
   computed: {
     PrestationsPart (): Array<any> {
       return i18n.t('PrestationsPart') as unknown as Array<any>
+    }
+  },
+  methods: {
+    scrollTo (targetId) {
+      const element = document.querySelector(targetId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  },
+  mounted () {
+    if (window.location.hash) {
+      this.scrollTo(window.location.hash)
     }
   }
 })
@@ -133,9 +146,11 @@ export default Vue.extend({
     color: #3e3e3e;
 }
 .card-title-desc {
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-style: italic;
     margin-top: -10px;
+    color: #3e3e3e;
+    display: inline-block
 }
 
 .card-desc {

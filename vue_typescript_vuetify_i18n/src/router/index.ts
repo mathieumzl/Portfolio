@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import pro from '../views/Pro.vue'
 import part from '../views/Part.vue'
 import projets from '../views/Projets.vue'
+import contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,14 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: projets
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: contact
   }
 ]
 

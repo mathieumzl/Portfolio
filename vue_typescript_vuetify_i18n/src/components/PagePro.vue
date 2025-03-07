@@ -5,13 +5,14 @@
        <p id="present"></p>
        <pf-PresentationHomePagePro class="mb-9"/>
     </v-container>-->
+    <v-card class='rounded-0' align="center" :color="$t('ColorBackground')" elevation='14'>
     <v-container fluid pa-0 id="prestations">
         <pf-PrestationsPro/>
     </v-container>
-  <v-divider></v-divider>
     <v-container id="contacts" fluid pa-0>
         <pf-ContactsPro/>
     </v-container>
+  </v-card>
   </div>
 </template>
 

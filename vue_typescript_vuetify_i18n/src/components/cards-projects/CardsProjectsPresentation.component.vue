@@ -1,12 +1,12 @@
 <template>
     <v-container>
-        <v-card-title class="justify-center mb-7 mt-4"><h1 class="gradient-text">{{$t('TitleAllProject')}}</h1></v-card-title>
+        <v-card-title class="justify-center mb-7 mt-4"><h2 class="TitreH3 section-divider">{{$t('TitleAllProject')}}</h2></v-card-title>
         <v-row class="mb-6 justify-center">
-          <v-chip-group mandatory active-class="gradient-text_menu">
-            <v-chip class="ma-2" outlined @click="filterTag =''">{{$t('FilterAll')}}</v-chip>
-            <v-chip class="ma-2" outlined @click="filterTag ='Professional'">{{$t('FilterIProfessional')}}</v-chip>
-            <v-chip class="ma-2" outlined @click="filterTag ='Student'">{{$t('FilterStudent')}}</v-chip>
-            <v-chip class="ma-2" outlined @click="filterTag ='Personal'">{{$t('FilterPersonal')}}</v-chip>
+          <v-chip-group mandatory class="">
+            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === ''}" @click="filterTag =''">{{$t('FilterAll')}}</v-chip>
+            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Professional'}" @click="filterTag ='Professional'">{{$t('FilterIProfessional')}}</v-chip>
+            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Student'}" @click="filterTag ='Student'">{{$t('FilterStudent')}}</v-chip>
+            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Personal'}" @click="filterTag ='Personal'">{{$t('FilterPersonal')}}</v-chip>
           </v-chip-group>
         </v-row>
         <v-row class="justify-center">
@@ -46,28 +46,84 @@ export default Vue.extend({
   }
 })
 </script>
-<style>
-.gradient-text_menu {
-    border-color: rgb(255, 255, 255) !important;
-    color: #FFFFFF;
-  height: 40px;
-  background-color: #ffffff;
-  background-image: linear-gradient(360deg, #ffffff, #ffffff);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+<style scoped>
+.PageProjets {
+  background-color: #FFFFFF !important;
 }
-.gradient-text {
-  font-family:'Consolas';
-  height: 40px;
-  background-color: #f3ec78;
-  background-image: linear-gradient(360deg, #cf9b58, #b88f59);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.TitreH3 {
+  color:rgba(62, 62, 62, 1) !important;
 }
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 10 10px; /* Espace de 10px de chaque côté */
+  box-sizing: border-box;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  height: 2px;
+  background: #333;
+  flex-grow: 1;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  max-width: 170px !important;
+}
+
+.custom-card {
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f5f5f5;
+    border: 3px solid #3e3e3e; /* Ajuste selon le contenu */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Évite l'étirement du contenu */
+}
+.custom-card:hover {
+    transform: scale(1.02); /* Applique le zoom uniquement à la carte survolée */
+    border-color: rgba(163, 106, 74, 1) !important;
+    border: 4px solid #3e3e3e; /* Ajuste selon le contenu */
+}
+
+.v-chip-group {
+  display: flex;               /* Utilisation de flexbox */
+  flex-wrap: wrap;             /* Permet aux chips de se mettre à la ligne si besoin */
+  justify-content: center;     /* Centrer les chips dans le conteneur */
+}
+
+/* BOUTONS FILTRE RECHERCHE */
+.custom-btn {
+  border-radius: 5px !important;
+  background: rgba(245, 241, 235, 1) !important;
+  color: rgba(62, 62, 62, 1) !important; /* Blanc cassé */
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  padding: 12px 24px !important;
+  border: 2px solid rgba(62, 62, 62, 1) !important;
+  transition: all 0.3s ease-in-out !important;
+  text-transform: uppercase !important;
+  box-sizing: border-box;
+}
+/* Media Query pour les petits écrans */
+@media (max-width: 640px) {
+  .custom-btn {
+    font-size: 2vw !important;  /* Réduction de la taille du texte */
+    padding: 8px 16px !important;  /* Réduction du padding */
+  }
+}
+.custom-btn:hover {
+  transform: scale(1.1) !important;  /* Effet d'agrandissement */
+}
+
+.selected-chip {
+  border: 2px solid #A36A4A !important; /* Couleur de la bordure lorsque sélectionné */
+  background-color: #B5BCAF !important; /* Optionnel: Fond légèrement coloré pour un meilleur contraste */
+}
+
 </style>

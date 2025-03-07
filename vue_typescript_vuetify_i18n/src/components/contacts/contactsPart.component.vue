@@ -3,7 +3,7 @@
       <form ref="form" @submit.prevent="sendEmail">
         <v-row justify="center">
             <v-col class="FormContact mt-4 mb-3" cols="12" sm="10" md="8" lg="6">
-                <h1 class="section-divider TitreH3">{{$t('HeaderContact')}}</h1>
+                <h1 class="section-divider TitreH3">{{$t('Contact')}}</h1>
                 <span class="HeaderContactDesc">{{ $t("HeaderContactDesc") }}</span>
               <a target="_blank" style="text-decoration: none;" class="mb-12" href="mailto:contact@mazal-mathieu.fr">
                 <h4 class="TitreMail">{{ $t("E-mail") }}</h4>
@@ -134,7 +134,7 @@ export default Vue.extend({
       this.$v.$touch() // Force la validation des champs avant d'envoyer
       if (!this.isValid()) return
       this.overlay = true
-      emailjs.sendForm('service_gd7g9by', 'template_w6w5j2r', this.$refs.form, 'O8Bauw8Gs7ykLrpHH')
+      emailjs.sendForm('service_gd7g9by', 'template_713c125', this.$refs.form, 'O8Bauw8Gs7ykLrpHH')
         .then((result) => {
           console.log('SUCCESS!', this.snackbar = true, result.text)
           this.overlay = false

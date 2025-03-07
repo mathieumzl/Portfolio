@@ -2,7 +2,6 @@
     <div class="Part">
       <pf-header-part/>
       <page-part class="mt-16"/>
-      <pf-ContactsPart id="contacts"/>
     </div>
   </template>
 
