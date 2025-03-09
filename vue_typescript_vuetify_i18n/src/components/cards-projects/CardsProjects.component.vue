@@ -3,7 +3,9 @@
       <a @click="sheet = !sheet">
         <v-card class='rounded-0' :elevation="hover ? 18 : 7" max-width="350px" >
           <v-img align="left" :src="require(`@/assets/${$props.project.thumbnail_name}`)" height="350px" width="350px">
-            <span class="text-h5 pl-4 pt-4 d-inline-block"><p style="color :#F5F1EB" > {{$props.project.name}} </p></span>
+            <span class="text-h5 pl-4 pt-4 d-inline-block">
+              <p class="TitreCarteProjets" > {{$props.project.name}} </p>
+            </span>
           </v-img>
           <v-fade-transition >
             <v-overlay z-index="1" v-if="hover" opacity="0.9" absolute class="CartesProjets" color='rgba(181, 188, 175, 1)'>
@@ -130,6 +132,13 @@ export default Vue.extend({
 })
 </script>
 <style>
+.TitreCarteProjets {
+  color: #FFF !important;
+  text-shadow:     1px 1px 0px rgba(0, 0, 0, 1),   /* Ombre droite */
+  -1px -1px 0px rgba(0, 0, 0, 1),  /* Ombre gauche */
+  1px -1px 0px rgba(0, 0, 0, 1),   /* Ombre en haut à droite */
+  -1px 1px 0px rgba(0, 0, 0, 1);   /* Ombre en bas à gauche */
+}
 element.style {
     opacity: 1;
     width: 100px !important;

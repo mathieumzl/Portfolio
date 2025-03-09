@@ -11,6 +11,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@mdi/font": "^7.4.47",
+    "color-thief-browser": "^2.0.2",
+    "colorthief": "^2.6.0",
     "core-js": "^3.6.5",
     "img-comparison-slider": "^7.1.0",
     "vue": "^2.6.11",

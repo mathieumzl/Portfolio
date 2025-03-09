@@ -1,15 +1,12 @@
 <template>
-    <div fluid pa-0>
+    <div fluid pa-0 class='rounded-0' align="center" elevation='14'>
       <!--<v-container fluid pa-0  id="contacts">
         <pf-Contacts/>
       </v-container>-->
-      <v-container fluid pa-0 id="projects">
+      <v-container fluid pa-0 id="projects" >
         <v-divider></v-divider>
-        <v-card class='rounded-0' align="center" :color="$t('ColorBackground')" elevation='14'>
-           <pf-CardsProjectsPresentation/>
-        </v-card>
+           <pf-CardsProjectsPresentation />
       </v-container>
-        <v-divider color="white"/>
     </div>
 </template>
 

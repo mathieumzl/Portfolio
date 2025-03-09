@@ -5,8 +5,7 @@
           <v-chip-group mandatory class="">
             <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === ''}" @click="filterTag =''">{{$t('FilterAll')}}</v-chip>
             <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Professional'}" @click="filterTag ='Professional'">{{$t('FilterIProfessional')}}</v-chip>
-            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Student'}" @click="filterTag ='Student'">{{$t('FilterStudent')}}</v-chip>
-            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Personal'}" @click="filterTag ='Personal'">{{$t('FilterPersonal')}}</v-chip>
+            <v-chip class="ma-2 custom-btn" outlined :class="{'selected-chip': filterTag === 'Portfolio'}" @click="filterTag ='Portfolio'">{{$t('FilterPortfolio')}}</v-chip>
           </v-chip-group>
         </v-row>
         <v-row class="justify-center">

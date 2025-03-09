@@ -122,7 +122,7 @@
   "PreTimelineDescr04": "Contrat 9 mois Laboratoire GEN-BIO (Clermont-ferrand)",
   "PreTimelineDescr04_1": "Contrat 2 ans EHPAD (Aigueperse)",
   "FilterAll": "Tous",
-  "FilterStudent": "Etudiant",
+  "FilterPortfolio": "Portfolio",
   "FilterPersonal": "Personnel",
   "FilterIProfessional": "Professionnel",
   "SpacePortfolio": "Portfolio",
@@ -197,7 +197,7 @@
       "description": "Bénéficiez d’un autre regard avant d’acheter un bien.",
       "NeedReinforcement": "Vous hésitez sur le potentiel d’un bien immobilier ?",
       "details": "Visite sur place avec analyse des atouts et contraintes du bien. Conseils sur l’agencement, le potentiel d’optimisation et les éventuels travaux à prévoir.",
-      "price": "À partir de 90€",
+      "price": "70€/heure",
       "dailyRate": "Montpellier et ses alentours",
       "tag": "Conseil"
     },
@@ -206,8 +206,8 @@
       "description": "Obtenez des conseils déco personnalisés et une vision claire pour transformer votre intérieur.",
       "NeedReinforcement": "Vous souhaitez donner du caractère à votre intérieur ?",
       "details": "Je vous guide pour harmoniser votre décoration et faire les bons choix en fonction de vos envies et contraintes.",
-      "price": "À partir de 120€",
-      "dailyRate": "",
+      "price": "60€/heure",
+      "dailyRate": "Forfait journée : 400€",
       "tag": "Conseil"
     },
     {
@@ -215,8 +215,8 @@
       "description": "Trouvez les bons meubles et matériaux sans perdre de temps.",
       "NeedReinforcement": "Vous ne savez pas où trouver le mobilier ou les objets déco idéaux ?",
       "details": "Sélection personnalisée de meubles et accessoires adaptés à votre style et budget.",
-      "price": "À partir de 100€",
-      "dailyRate": "",
+      "price": "70€/heure",
+      "dailyRate": "Forfait journée : 500€",
       "tag": "Conseil"
     },
     {
@@ -224,8 +224,8 @@
       "description": "Visualisation réaliste de votre projet avant travaux.",
       "NeedReinforcement": "Envie de voir votre futur intérieur en images ?",
       "details": "Réalisation de plans techniques 2D, modélisation 3D et rendu 3D avec proposition de matériaux, couleurs et mobiliers adaptés.",
-      "price": "À partir de 300€",
-      "dailyRate": "Selon la superficie et la complexité technique du projet",
+      "price": "70€/heure",
+      "dailyRate": "Forfait journée : 500€",
       "tag": "3D"
     },
     {
@@ -249,8 +249,8 @@
   ],
   "Projects": {
     "Project88": {
-      "name":"Temporium                    Agropolis Museum - Montpellier",
-      "description": "Student",
+      "name":"Temporium Agropolis Museum - Montpellier",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/ProjetPFEMontpellier.jpg",
       "softwares": [
         { "logo": "logo-soft/archicad_50px_50px.png", "tooltip": "Archicad"},
@@ -259,7 +259,7 @@
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"},
         { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetPFEMontpellier/ProjetPFEMontpellier01.jpg",
         "description": [
@@ -295,14 +295,14 @@
     },
     "Project89": {
       "name":"Projet Multisport - Montpellier",
-      "description": "Student",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/ProjetMultiSportJardin.png",
       "softwares": [
         { "logo": "logo-soft/archicad_50px_50px.png", "tooltip": "Archicad"},
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetMultiSportJardin/ProjetMultiSportJardinRendu03.jpg",
         "description": [
@@ -328,14 +328,14 @@
     },
     "Project90": {
       "name":"Le Terminal - Montpellier",
-      "description": "Student",
+      "description": "StudPortfolioent",
       "thumbnail_name": "ProjetPresentation/ProjetTerminalAnalyse.jpg",
       "softwares": [
         { "logo": "logo-soft/archicad_50px_50px.png", "tooltip": "Archicad"},
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetTerminalAnalyse/ProjetTerminalAnalyse04.jpg",
         "description": [
@@ -353,7 +353,7 @@
     },
     "Project91": {
       "name":"Ancien Stade Nautique - Bellerive-Sur-Allier",
-      "description": "Student",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/ProjetStadeNautiqueB.jpg",
       "softwares": [
         { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
@@ -361,7 +361,7 @@
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetStadeNautiqueB/ProjetStadeNautiqueB01.jpg",
         "description": [
@@ -392,7 +392,7 @@
     },
     "Project92": {
       "name":"Bivouac Cézallier",
-      "description": "Student",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/ProjetBivouacCezallier.jpg",
       "softwares": [
         { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
@@ -400,7 +400,7 @@
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetBivouacCezallier/ProjetBivouacCezallier01.jpg",
         "description": [
@@ -426,7 +426,7 @@
     },
     "Project93": {
       "name":"Restaurant thématique",
-      "description": "Student",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/ProjetRestaurantThematique.jpg",
       "softwares": [
         { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
@@ -434,7 +434,7 @@
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetRestaurantThematique/ProjetRestaurantThematique01.jpg",
         "description": [
@@ -568,7 +568,7 @@
         { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
         { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"}
       ],
-      "tag" : "Personal",
+      "tag" : "Professional",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetLaChambre/Lachambre01.jpg",
         "description": [
@@ -592,14 +592,14 @@
     },
     "Project100": {
       "name":"La Colocation",
-      "description": "Student",
+      "description": "Portfolio",
       "thumbnail_name": "ProjetPresentation/projetcoloc.png",
       "softwares": [
         { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"},
         { "logo": "logo-soft/autocad_50px_50px.png", "tooltip": "Autocad"},
         { "logo": "logo-soft/pencil_50px_50px.png", "tooltip": "Dessin à la main"}
       ],
-      "tag" : "Student",
+      "tag" : "Portfolio",
       "v_sheet": {
         "src": "ProjetPresentation/ProjetColocation/ProjetColocPlan.jpg",
         "description": [
