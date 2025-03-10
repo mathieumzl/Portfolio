@@ -23,7 +23,7 @@ import Prestations from '@/components/prestations/Prestations.component.vue'
 /* Import Projet Page Pro */
 import PresentationHomePagePro from '@/components/presentation-home-page/PresentationHomePagePro.component.vue'
 import HomeCoverPro from '@/components/home-cover/HomeCoverPro.component.vue'
-import ContactsPro from '@/components/contacts/contactsPro.component.vue'
+import ContactsPro from '@/components/contacts/contactsProf.component.vue'
 import PrestationsPro from '@/components/prestations/PrestationsPro.component.vue'
 
 /* Import Projet Page Particulier */
