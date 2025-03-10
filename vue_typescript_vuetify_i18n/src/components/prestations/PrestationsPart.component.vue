@@ -18,7 +18,11 @@
               <!-- Colonne 2 -->
               <v-col cols="12" md="5" class="text-left">
                 <h3 class="card-title">{{ item.NeedReinforcement }}</h3>
-                <p class="card-desc">{{ item.details }}</p>
+                <ul class="card-desc">
+                  <div v-for="(detail, index) in item.details" :key="index">
+                    {{ detail }}
+                  </div>
+                </ul>
               </v-col>
 
               <!-- Colonne 3 -->
@@ -30,8 +34,10 @@
           </v-card>
         </v-col>
       </v-row>
-
-      <div class="mb-15" />
+      <div class="mb-7" />
+      <span class="card-title">{{ $t("PrestationsPartJournee") }}</span>
+      <div/>
+      <span class="card-title">{{ $t("PrestationsPartTTC") }}</span>
     </v-container>
   </template>
 

@@ -267,7 +267,7 @@ export default Vue.extend({
 }
 .TitreContactHP a {
   color: #000000 !important;
-  font-size: clamp(10px, 0.7vw, 17px);
+  font-size: clamp(10px, 0.7vw, 16px);
 }
 .TitreContactHP {
   font-weight: normal;

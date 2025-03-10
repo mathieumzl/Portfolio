@@ -73,7 +73,7 @@
   "TexteHistoireMZL": {
     "TitreHistoire":"HISTOIRE",
     "ParaHistoire": "Depuis toujours, l’architecture d’intérieur me passionne. Fasciné par la manière dont un espace peut transformer une ambiance, influencer les émotions et s’adapter aux besoins de chacun, j’ai choisi d’en faire mon métier.",
-    "ParaHistoire1": "Après mes études initiales dans un autre domaine, j’ai pris la décision de me réorienter pour poursuivre ce qui m’anime réellement. J’ai suivi une formation spécialisée de 5 ans, enrichie par 3 années d’expérience en agence, où j’ai eu l’opportunité de travailler sur des projets variés et exigeants.",
+    "ParaHistoire1": "Après mes études initiales dans un autre domaine, j’ai pris la décision de me réorienter pour poursuivre ce qui m’anime réellement. J’ai suivi une formation d'architecte d'intérieur de 5 ans, enrichie par 3 années d’expérience en agence, où j’ai eu l’opportunité de travailler sur des projets variés et exigeants.",
     "ParaHistoire2": "Fort de ce parcours, j’ai fondé MZL Home Design, avec une ambition claire : concevoir des intérieurs uniques, pensés pour être à la fois esthétiques, fonctionnels et en parfaite harmonie avec l’identité de leurs occupants."
   },
   "TexteCompMZL": {
@@ -141,7 +141,7 @@
   },
   "TitleAllPrestations":"PRESTATIONS",
   "TitleAllPrestationsProDesc":"Découvrez les prestations sur mesure, adaptées à vos projets ponctuels ou à long terme, avec un engagement pour la qualité et votre satisfaction.",
-  "TitleAllPrestationsPartDesc": "Découvrez une sélection de prestations pour réaménager et embellir vos espaces. Chaque service est conçu pour vous offrir des solutions fonctionnelles et esthétiques. Pour toute demande spécifique, n’hésitez pas à me contacter directement.",
+  "TitleAllPrestationsPartDesc": "Découvrez une sélection de prestations pour réaménager et embellir vos espaces. Chaque service est conçu pour vous offrir des solutions fonctionnelles et esthétiques. Chaque prestation peut être modifiée ou adaptée en fonction de vos besoins spécifiques. Pour toute demande particulière ou personnalisation, n’hésitez pas à me contacter directement.",
   "Price": "Prix",
   "DailyRate":"Forfait journée",
   "PrestationsPro": [
@@ -149,7 +149,7 @@
       "title": "Formule Horaire",
       "description": "Tarification flexible pour une prestation adaptée à vos besoins.",
       "NeedReinforcement": "Vous avez besoin d’un renfort ponctuel ?",
-      "details": "Que ce soit pour la réalisation de plans techniques, la modélisation 3D, les rendus visuels ou l’optimisation d’espaces, cette prestation vous apporte l’expertise nécessaire en toute flexibilité.",
+      "details": "Que ce soit pour la réalisation de plans techniques, la modélisation 3D, les rendus visuels ou l’optimisation d’espaces, cette prestation vous apporte les solutions adaptées avec flexibilité.",
       "price": "70€/heure",
       "dailyRate": "400€",
       "tag": "Horaire"
@@ -173,15 +173,6 @@
       "tag": "Forfait"
     },
     {
-      "title": "Valorisation Immobilière",
-      "description": "Optimisez l’attrait de votre bien avant sa mise en vente.",
-      "NeedReinforcement": "Besoin de rendre un bien plus attractif ?",
-      "details": "Nous proposons des conseils d’aménagement, des retouches visuelles et des rendus 3D pour séduire les acheteurs et accélérer la vente.",
-      "price": "Sur devis",
-      "dailyRate": "",
-      "tag": "Forfait"
-    },
-    {
       "title": "Demandes Spécifiques",
       "description": "Pour des demandes spécifiques ou des projets uniques, contactez-nous pour des solutions personnalisées.",
       "NeedReinforcement": "Besoin d’une prestation spécifique ?",
@@ -191,13 +182,18 @@
       "tag": "Forfait"
     }
   ],
+  "PrestationsPartJournee" : "Les forfaits journée comprennent 8 heures de travail.",
+  "PrestationsPartTTC" : "Tous les prix affichés sont en TTC.",
   "PrestationsPart": [
     {
       "title": "Accompagnement Visite & Conseil",
       "description": "Bénéficiez d’un autre regard avant d’acheter un bien.",
-      "NeedReinforcement": "Vous hésitez sur le potentiel d’un bien immobilier ?",
-      "details": "Visite sur place avec analyse des atouts et contraintes du bien. Conseils sur l’agencement, le potentiel d’optimisation et les éventuels travaux à prévoir.",
-      "price": "70€/heure",
+      "NeedReinforcement": "Vous hésitez sur le potentiel d'un bien ou d'un projet ?",
+      "details": [
+        "Lors de notre rendez-vous à domicile, nous discutons de vos besoins et envies en aménagement et décoration.",
+        "Cette visite est aussi l'occasion d'évaluer le potentiel d'un bien immobilier avant achat. Je vous aide à vous projeter, à envisager les aménagements possibles et à repérer d'éventuelles contraintes ou défauts à anticiper."
+      ],
+      "price": "90€/heure",
       "dailyRate": "Montpellier et ses alentours",
       "tag": "Conseil"
     },
@@ -205,16 +201,22 @@
       "title": "Accompagnement déco & Inspirations visuelles",
       "description": "Obtenez des conseils déco personnalisés et une vision claire pour transformer votre intérieur.",
       "NeedReinforcement": "Vous souhaitez donner du caractère à votre intérieur ?",
-      "details": "Je vous guide pour harmoniser votre décoration et faire les bons choix en fonction de vos envies et contraintes.",
+      "details": [
+        "Je vous guide pour harmoniser votre décoration et faire les bons choix en fonction de vos envies et contraintes.",
+        "Une planche d'inspiration visuelle pour illustrer l'ambiance et le style proposés.",
+        "Une sélection de couleurs adaptées à l’espace et à l’ambiance recherchée."
+      ],
       "price": "60€/heure",
-      "dailyRate": "Forfait journée : 400€",
+      "dailyRate": "Forfait journée : 450€",
       "tag": "Conseil"
     },
     {
       "title": "Liste d'achats & Assistance personnalisée",
       "description": "Trouvez les bons meubles et matériaux sans perdre de temps.",
       "NeedReinforcement": "Vous ne savez pas où trouver le mobilier ou les objets déco idéaux ?",
-      "details": "Sélection personnalisée de meubles et accessoires adaptés à votre style et budget.",
+      "details": [
+        "Une sélection détaillée de meubles, objets déco, matériaux, avec des liens ou informations sur où les acheter."
+      ],
       "price": "70€/heure",
       "dailyRate": "Forfait journée : 500€",
       "tag": "Conseil"
@@ -223,7 +225,10 @@
       "title": "Conception 3D & Projection",
       "description": "Visualisation réaliste de votre projet avant travaux.",
       "NeedReinforcement": "Envie de voir votre futur intérieur en images ?",
-      "details": "Réalisation de plans techniques 2D, modélisation 3D et rendu 3D avec proposition de matériaux, couleurs et mobiliers adaptés.",
+      "details": [
+        "Des plans détaillés des aménagements proposés, avec les dimensions précises des espaces.",
+        "Des vues en 3D du projet, permettant de visualiser l’intérieur."
+      ],
       "price": "70€/heure",
       "dailyRate": "Forfait journée : 500€",
       "tag": "3D"
@@ -232,7 +237,9 @@
       "title": "Démarches Administratives",
       "description": "Prise en charge de vos obligations administratives.",
       "NeedReinforcement": "Des démarches compliquées à gérer ?",
-      "details": "Réalisation du dossier administratif (déclaration préalable, permis de construire), création des pièces graphiques et suivi du dossier jusqu’à acceptation.",
+      "details": [
+        "Réalisation du dossier administratif (déclaration préalable, permis de construire), création des pièces graphiques et suivi du dossier jusqu’à acceptation."
+      ],
       "price": "Sur devis",
       "dailyRate": "",
       "tag": "Administratif"
@@ -241,7 +248,9 @@
       "title": "Demandes Spécifiques",
       "description": "Pour des projets uniques ou des besoins particuliers, contactez-moi pour des solutions sur-mesure.",
       "NeedReinforcement": "Besoin d’un service personnalisé ?",
-      "details": "Que ce soit pour des conseils techniques, créatifs ou tout autre type de prestation, je suis à votre écoute pour discuter de vos envies. N’hésitez pas à me contacter pour toute demande spécifique : je vous proposerai une solution sur mesure, parfaitement adaptée à votre projet.",
+      "details": [
+        "Que ce soit pour des conseils techniques, créatifs ou tout autre type de prestation, je suis à votre écoute pour discuter de vos envies. N’hésitez pas à me contacter pour toute demande spécifique : je vous proposerai une solution sur mesure, parfaitement adaptée à votre projet."
+      ],
       "price": "Sur devis",
       "dailyRate": "",
       "tag": "Forfait"
@@ -465,7 +474,7 @@
         "src": "ProjetPresentation/ProjetClotureR/ProjetClotureR01.jpg",
         "description": [
           "Ce projet a été de concevoir l'aménagement extérieur avec une clôture qui ne bloque pas le champ de vision.",
-          "Projet effectué lors de mon alternance chez DOUX Architecte - VICHY en 2021"
+          "Projet effectué chez DOUX Architecte - VICHY en 2021"
         ],
         "srcv" : [
           "ProjetPresentation/ProjetClotureR/ProjetClotureR.mp4"
@@ -491,7 +500,7 @@
         "src": "ProjetPresentation/ProjetBureauBiblioR/BureauBiblioR01.jpg",
         "description": [
           "Ce projet a été de concevoir dans l'espace séjour une bibliothèque et un bureau permettant d'offrir une luminosité naturel et un cadrage sur l'extérieur.",
-          "Projet effectué lors de mon alternance chez DOUX Architecte - VICHY en 2021"
+          "Projet effectué chez DOUX Architecte - VICHY en 2021"
         ],
         "srcv" : [
           "ProjetPresentation/ProjetBureauBiblioR/ProjetBureauBiblioR.mp4"
@@ -519,7 +528,7 @@
         "description": [
           "Ce projet a été fait pour une maison à Serbannes. L'objectif était de créer un Pool House qui suit le même cadrage que la maison a sur la nature pour ne pas perturber le champ de vision.",
           "Ce Pool House offre différents points de vue sur la nature tout en se fondant avec son environnement",
-          "Projet effectué lors de mon stage chez DOUX Architecte - VICHY en 2021"
+          "Projet effectué chez DOUX Architecte - VICHY en 2021"
         ],
         "src1": [
           "ProjetPresentation/ProjetSerbannes/Serbannes02.jpg",
@@ -545,7 +554,7 @@
         "description": [
           "Ce projet est situé à Bellerive-sur-Allier. Le but était de créer un Pool House qui suit la continuité de l'architecture d'une maison contemporaine.",
           "Il offre différents cadrages tout en s'intégrant à la nature qui l'entoure.",
-          "Projet effectué lors de mon stage chez DOUX Architecte - VICHY en 2021"
+          "Projet effectué chez DOUX Architecte - VICHY en 2021"
         ],
         "srcv" : [
           "ProjetPresentation/ProjetPoolhouseBellerive/ProjetPoolhouseBellerive.mp4"
@@ -573,7 +582,7 @@
         "src": "ProjetPresentation/ProjetLaChambre/Lachambre01.jpg",
         "description": [
           "Le but était de créer deux espaces bien définis, une chambre et un grand espace de travail. La pièce étant sous rampants j'ai essayé d'optimiser l'espace tout en jouant avec les poutres pour garder le charme de la pièce." ,
-          "Projet personnel effectué en 2021"
+          "Projet effectué en 2021"
         ],
         "srcurl": [
           "/embed/e1SaNQLOquY"

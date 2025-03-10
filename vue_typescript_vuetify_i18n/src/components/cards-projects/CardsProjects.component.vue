@@ -134,7 +134,7 @@ export default Vue.extend({
 <style>
 .TitreCarteProjets {
   color: #FFF !important;
-  text-shadow:     1px 1px 0px rgba(0, 0, 0, 1),   /* Ombre droite */
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1),   /* Ombre droite */
   -1px -1px 0px rgba(0, 0, 0, 1),  /* Ombre gauche */
   1px -1px 0px rgba(0, 0, 0, 1),   /* Ombre en haut à droite */
   -1px 1px 0px rgba(0, 0, 0, 1);   /* Ombre en bas à gauche */
