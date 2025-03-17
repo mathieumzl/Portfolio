@@ -54,39 +54,39 @@
           <v-list-item-group active-class="text--accent-4">
             <a class="mr-4 section-divider-menu" style="color:#3E3E3E  !important" @click="scrollTo('#present')"><h3>{{$t('HeaderPresentationMenu')}}</h3></a>
           <!-- Accueil -->
-            <v-list-item  @click="drawer = false">
+          <v-list-item  @click="drawer = false">
               <v-list-item-icon>
                 <v-icon color="#3E3E3E">mdi-home-outline</v-icon>
               </v-list-item-icon>
-                <a href="/" @click="scrollTo('#home')" class="TitreHP">{{$t('HeaderAccueil')}}</a>
+                <router-link @click="scrollTo('#home')" to="/" class="TitreHP">{{$t('HeaderAccueil')}}</router-link>
           </v-list-item>
           <!-- Présentations/ L'atelier / L'agence -->
           <v-list-item @click="drawer = false">
             <v-list-item-icon>
               <v-icon color="rgba(62, 62, 62, 1)">mdi-presentation</v-icon>
             </v-list-item-icon>
-            <a @click="scrollTo('#present')" href="/#present" class="TitreHP mr-5">{{$t('HeaderPresentation')}}</a>
+            <router-link @click="scrollTo('#present')" to="/#present" class="TitreHP mr-5">{{$t('HeaderPresentation')}}</router-link>
           </v-list-item>
           <!-- Projet / Realisation -->
           <v-list-item @click="drawer = false">
             <v-list-item-icon>
               <v-icon color="rgba(62, 62, 62, 1)">mdi-home-group-plus</v-icon>
             </v-list-item-icon>
-            <a href="/projets" @click="scrollTo('#home')" class="TitreHPAccueil">{{$t('HeaderRealisations')}}</a>
+            <router-link to="/projets" @click="scrollTo('#home')" class="TitreHPAccueil">{{$t('HeaderRealisations')}}</router-link>
           </v-list-item>
           <!-- Particuliers -->
           <v-list-item>
             <v-list-item-icon>
               <v-icon color="rgba(62, 62, 62, 1)">mdi-account-edit-outline</v-icon>
             </v-list-item-icon>
-            <a  href="/particuliers" class="TitreHP">{{$t('SpacePart')}}</a>
+            <router-link to="/particuliers" class="TitreHP">{{$t('SpacePart')}}</router-link>
           </v-list-item>
           <!-- Professionnels -->
           <v-list-item>
             <v-list-item-icon>
               <v-icon color="rgba(62, 62, 62, 1)">mdi-briefcase-edit-outline</v-icon>
             </v-list-item-icon>
-            <a  href="/pro" class="TitreHP">{{$t('SpacePro')}}</a>
+            <router-link to="/pro" @click="scrollTo('#home')" class="TitreHP">{{$t('SpacePro')}}</router-link>
           </v-list-item>
           <!-- Contact -->
           <v-list-item>

@@ -55,8 +55,14 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
   mode: 'history',
   routes,
-  scrollBehavior (_to, _from, _savedPosition) {
-    return { x: 0, y: 0 } // Suppression du point-virgule
+  scrollBehavior (to, _from, _savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: 'smooth'
+      }
+    }
+    return { x: 0, y: 0 }
   }
 })
 
