@@ -30,8 +30,10 @@
           </v-card>
         </v-col>
       </v-row>
-
-      <div class="mb-15" />
+      <div class="mb-7" />
+      <span class="card-title">{{ $t("PrestationsPartJournee") }}</span>
+      <div/>
+      <span class="card-title">{{ $t("PrestationsPartTTC") }}</span>
     </v-container>
   </template>
 
