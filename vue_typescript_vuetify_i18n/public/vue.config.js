@@ -1,7 +1,7 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/', // Remplace "Portfolio" par le nom de ton repo
+    publicPath: '/', // Puisque tu utilises un domaine personnalisé, c'est "/"
     devServer: {
-      historyApiFallback: true // Permet d'éviter les erreurs 404
+      historyApiFallback: true // Permet d'éviter les erreurs 404 en local
     }
   };
   
