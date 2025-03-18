@@ -16,10 +16,10 @@
       <v-card class="v-card-pop-choix" >
         <v-card-title class="minimal-btn-titre-choix">{{$t('HomePageBtnProjetVous')}}</v-card-title>
         <v-card-text class="v-card-text-choix">
-            <v-btn href="/particuliers"  class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
+          <v-btn to="/particuliers"  class="minimal-btn-choix" outlined large @click="redirect('/particuliers')">
               {{$t('HomePageBtnParticulier')}}
             </v-btn>
-            <v-btn href="/pro" class="minimal-btn-choix" outlined large @click="redirect('/pro')">
+            <v-btn to="/pro" class="minimal-btn-choix" outlined large @click="redirect('/pro')">
               {{$t('HomePageBtnParofessionnel')}}
             </v-btn>
         </v-card-text>
