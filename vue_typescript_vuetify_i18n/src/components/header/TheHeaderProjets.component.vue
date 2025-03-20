@@ -28,7 +28,9 @@
               <a class="TitreHP">{{$t('HeaderAccueil')}}</a>
             </router-link>
             <!-- Présentations/ L'atelier / L'agence -->
-            <a href="/#present" class="TitreHP nav_menu mr-5">{{$t('HeaderPresentation')}}</a>
+            <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/#present">
+              <a class="TitreHP">{{$t('HeaderPresentation')}}</a>
+            </router-link>
             <!-- Projet / Realisation -->
             <router-link class="nav_menu mr-4" color="transparent" style="text-decoration: none; color:#cf9b58 !important" to="/projets">
               <a href="/projets" @click="scrollTo('#home')" class="TitreHPPro">{{$t('HeaderRealisations')}}</a>
