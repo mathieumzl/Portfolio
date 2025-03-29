@@ -11,7 +11,9 @@
     </v-card-text>
         <v-divider></v-divider>
         <v-card-text class="white--text BasDePage02">
-        <span class="LienBasDePage02">2021 - {{ new Date().getFullYear() }}- MAZAL Mathieu</span>
+        <span class="LienBasDePage02">2021 - {{ new Date().getFullYear() }} - MAZAL Mathieu -</span>
+        <!-- Lien Mentions légales avec router-link pour utiliser le hash routing -->
+        <router-link to="/mentionslegales" class="Mention_legal"> Mentions légales</router-link>
     </v-card-text>
   </v-card>
   </v-footer>
@@ -51,6 +53,16 @@ export default Vue.extend({
 })
 </script>
 <style scoped>
+.Mention_legal {
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 0.9em !important;
+  margin-left: 4px !important;
+}
+.Mention_legal:hover {
+  color: rgba(181, 188, 175, 1)!important;
+  transform: scale(1.08) !important;  /* Effet d'agrandissement */
+}
 .divider-custom-BP {
   border-color: rgba(62, 62, 62, 1) !important; /* Remplace par ta couleur */
   border-width: 1px !important;    /* Épaisseur */
@@ -79,7 +91,7 @@ export default Vue.extend({
 }
 .LienBasDePage02:hover {
   color: rgba(181, 188, 175, 1) !important; /* Assure que le texte est bien visible */
-  transform: scale(1.08) !important;  /* Effet d'agrandissement */
+  transform: scale(1.04) !important;  /* Effet d'agrandissement */
 }
 .v-icon {
   color: rgba(62, 62, 62, 1) !important;

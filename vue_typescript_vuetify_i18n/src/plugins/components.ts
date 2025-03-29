@@ -30,6 +30,9 @@ import PrestationsPro from '@/components/prestations/PrestationsPro.component.vu
 import ContactsPart from '@/components/contacts/contactsPart.component.vue'
 import PrestationsPart from '@/components/prestations/PrestationsPart.component.vue'
 
+/* Import Projet Page Mentions_legales */
+import Mentionslegales from '@/components/Mentions-legales/Conditions.component.vue'
+
 /* Import Projet Sheet
 import Project100 from '@/components/projects-all-details/Project100.component.vue'
 import Project120 from '@/components/projects-all-details/Project120.component.vue'
@@ -70,6 +73,9 @@ Vue.component('pf-PrestationsPro', PrestationsPro)
 /* Component Projet Page pro */
 Vue.component('pf-ContactsPart', ContactsPart)
 Vue.component('pf-PrestationsPart', PrestationsPart)
+
+/* Component Projet Mentions_legales */
+Vue.component('pf-Mentionslegales', Mentionslegales)
 
 /* Component Projet Sheet
 Vue.component('pf-Project100', Project100)
