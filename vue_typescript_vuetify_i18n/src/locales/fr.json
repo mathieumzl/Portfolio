@@ -257,6 +257,37 @@
     }
   ],
   "Projects": {
+    "Project87": {
+      "name":"Une maison au cœur de la nature",
+      "description": "Portfolio",
+      "thumbnail_name": "ProjetPresentation/ProjetExterieurForetMaisonLumion.jpg",
+      "softwares": [
+        { "logo": "logo-soft/archicad_50px_50px.png", "tooltip": "Archicad"},
+        { "logo": "logo-soft/build_50px_50px.png", "tooltip": "Maquette"},
+        { "logo": "logo-soft/rhino_50px_50px.png", "tooltip": "Rhino"},
+        { "logo": "logo-soft/enscape_50px_50px.png", "tooltip": "Enscape"},
+        { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"}
+      ],
+      "tag" : "Portfolio",
+      "v_sheet": {
+        "src": "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion01.jpg",
+        "description": [
+          "Ce projet s'inscrit dans la continuité de ma réflexion sur l'architecture moderne en harmonie avec son environnement naturel. Avec l’objectif de créer une maison qui se fond parfaitement dans une forêt, tout en offrant un cadre de vie moderne et fonctionnel.",
+          "Le rez-de-chaussée, caractérisé par des murs rideaux, maximise la lumière naturelle et favorise l’interaction avec l’extérieur. Le premier étage, quant à lui, s’ouvre sur un balcon végétalisé, offrant ainsi une vue imprenable sur l’environnement.",
+          "Ce projet explore comment allier confort moderne et respect de la nature, créant ainsi un espace de vie unique et serein."
+        ],
+        "srcv" : [
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion07.mp4"
+        ],
+        "src1": [
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion02.jpg",
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion03.jpg",
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion04.jpg",
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion05.jpg",
+          "ProjetPresentation/ProjetExterieurForetMaisonLumion/ProjetExterieurForetMaisonLumion06.jpg"
+        ]
+      }
+    },
     "Project88": {
       "name":"Temporium Agropolis Museum - Montpellier",
       "description": "Portfolio",

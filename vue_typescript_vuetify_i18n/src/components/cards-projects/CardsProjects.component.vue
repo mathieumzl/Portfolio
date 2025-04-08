@@ -81,8 +81,8 @@
                           </v-col>
                         <v-divider width="800px" class="mt-5 mb-8 mt-1" color="#3E3E3E"/>
                       </v-col>
-                      <v-col cols="12" v-for="srcv in $props.project.v_sheet.srcv" :key="srcv">
-                            <video controls width="70%" max-height="458" preload="auto" playsinline loop id="headerVideo">
+                      <v-col class="video-container" :class="videoOrientations[i]" cols="12" v-for="srcv in $props.project.v_sheet.srcv" :key="srcv">
+                            <video class="video_format" controls width="70%" max-height="458" preload="auto" playsinline loop @loadedmetadata="checkVideoOrientation($event, i)" id="headerVideo">
                               <source :src="require(`@/assets/${srcv}`)" type='video/mp4'/>
                             </video>
                       </v-col>
@@ -121,17 +121,38 @@ export default Vue.extend({
     sheet: false,
     show: false,
     scrollInvoked: 0,
+    videoOrientations: [],
     offsetTop: 0
   }),
   methods: {
     onclick: function () {
       console.log('click')
+    },
+    checkVideoOrientation (event, index) {
+      const video = event.target
+      const isPortrait = video.videoHeight > video.videoWidth
+      this.$set(this.videoOrientations, index, isPortrait ? 'video-portrait' : 'video-landscape')
     }
   },
   props: ['project', 'v_sheet', 'src1']
 })
 </script>
 <style>
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.video-landscape video {
+  width: 70% !important;
+  max-height: 1080px !important;
+}
+.video-portrait video {
+  height: 100% !important;
+  max-width: 458px !important;
+}
 .TitreCarteProjets {
   color: #FFF !important;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1),   /* Ombre droite */
