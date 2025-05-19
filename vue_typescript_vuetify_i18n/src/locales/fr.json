@@ -193,7 +193,7 @@
         "Lors de notre rendez-vous à domicile, nous discutons de vos besoins et envies en aménagement et décoration.",
         "Cette visite est aussi l'occasion d'évaluer le potentiel d'un bien immobilier avant achat. Je vous aide à vous projeter, à envisager les aménagements possibles et à repérer d'éventuelles contraintes ou défauts à anticiper."
       ],
-      "price": "90€/heure",
+      "price": "À partir de 90 €",
       "dailyRate": "Montpellier et ses alentours",
       "tag": "Conseil"
     },
@@ -206,8 +206,8 @@
         "Une planche d'inspiration visuelle pour illustrer l'ambiance et le style proposés.",
         "Une sélection de couleurs adaptées à l’espace et à l’ambiance recherchée."
       ],
-      "price": "60€/heure",
-      "dailyRate": "Forfait journée : 450€",
+      "price": "50€/heure",
+      "dailyRate": "Forfait journée : 350€",
       "tag": "Conseil"
     },
     {
@@ -257,6 +257,30 @@
     }
   ],
   "Projects": {
+    "Project86": {
+      "name":"Cuisine Rétro Moderne",
+      "description": "Portfolio",
+      "thumbnail_name": "ProjetPresentation/CuisineRetroModerne.jpg",
+      "softwares": [
+        { "logo": "logo-soft/photoshop_50px_50px.png", "tooltip": "Photoshop"}
+      ],
+      "tag" : "Portfolio",
+      "v_sheet": {
+        "src": "ProjetPresentation/CuisineRetroModerne/CuisineRetroModerne01.jpg",
+        "description": [
+          "Un espace de vie chaleureux entre authenticité et modernité",
+          "Cette visualisation 3D met en scène une cuisine pensée comme un véritable lieu de vie. L’ambiance rétro moderne mêle lignes épurées, matériaux texturés et touches vintage, pour un rendu à la fois chaleureux et intemporel.",
+          "Les jeux de lumière, les volumes et les teintes ont été soigneusement travaillés pour favoriser la convivialité et l’élégance."
+        ],
+        "srcv" : [
+          "ProjetPresentation/CuisineRetroModerne/CuisineRetroModerne.mp4"
+        ],
+        "src1": [
+          "ProjetPresentation/CuisineRetroModerne/CuisineRetroModerne02.jpg",
+          "ProjetPresentation/CuisineRetroModerne/CuisineRetroModerne03.jpg"
+        ]
+      }
+    },
     "Project87": {
       "name":"Une maison au cœur de la nature",
       "description": "Portfolio",
