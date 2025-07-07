@@ -19,6 +19,7 @@ import HomeCover from '@/components/home-cover/HomeCover.component.vue'
 import PresentationHomePage from '@/components/presentation-home-page/PresentationHomePage.component.vue'
 import Contacts from '@/components/contacts/contacts.component.vue'
 import Prestations from '@/components/prestations/Prestations.component.vue'
+import Connect from '@/components/connect/connect.component.vue'
 
 /* Import Projet Page Pro */
 import PresentationHomePagePro from '@/components/presentation-home-page/PresentationHomePagePro.component.vue'
@@ -76,6 +77,7 @@ Vue.component('pf-PrestationsPart', PrestationsPart)
 
 /* Component Projet Mentions_legales */
 Vue.component('pf-Mentionslegales', Mentionslegales)
+Vue.component('pf-Connect', Connect)
 
 /* Component Projet Sheet
 Vue.component('pf-Project100', Project100)

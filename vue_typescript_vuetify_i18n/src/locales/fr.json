@@ -1,7 +1,10 @@
 {
   "NameSite": "Home Design",
+  "FollowTitre":"Tous mes réseaux sont ici, n'hésitez pas à me suivre !",
+  "LocalisationTitre": "Basé à Montpellier, quartier Port Marianne",
   "ColorProjet": "#B5BCAF",
   "ColorBackground": "#F5F1EB",
+  "ButtonCarte": "En savoir plus sur moi",
   "HeaderPresentation": "Présentation",
   "HeaderPresentationMenu": "Menu",
   "HeaderAccueil": "Accueil",
@@ -9,7 +12,7 @@
   "HeaderContactDesc": "Pour toute information ou demande, contactez-moi par mail ou via mon formulaire. Je suis à votre écoute et m'engage à répondre rapidement pour vous proposer les solutions adaptées à vos besoins.",
   "HeaderRealisations" :"Réalisations",
   "HeaderPrestation" :"Préstations",
-  "HeaderEmail": "contact@mazal-mathieu.fr",
+  "HeaderEmail": "mazal.mathieu@gmail.com",
   "HeaderHoraire": "Lundi au Vendredi de 09H à 17H",
   "VideoTitre": "Architecte d'intérieur - Montpellier",
   "VideoLegende": "Lundi au Vendredi de 09H à 17H",
@@ -43,7 +46,7 @@
   "Contact": "CONTACT",
   "PresentationHomePage": {
     "name":"MAZAL Mathieu",
-    "Titre":"Architecture d'intérieur - Montpellier",
+    "Titre":"Architecte d'intérieur - Montpellier",
     "TitreDescription":"Accompagnement Particuliers & Professionnels",
     "button":"MON HISTOIRE - MES COMPÉTENCES",
     "Description": {
@@ -58,7 +61,7 @@
       "paragraph2":"Que ce soit pour valoriser un projet, fluidifier la collaboration entre intervenants ou renforcer l'impact d'une présentation, mon expertise s’adapte à vos besoins. Architecture, immobilier, aménagement d’espaces professionnels… Chaque projet mérite des visuels à la hauteur de son ambition."
     }
   },
-  "E-mail": "Par mail : contact@mazal-mathieu.fr",
+  "E-mail": "Par mail : mazal.mathieu@gmail.com",
   "SpeedForm": {
     "NameForm": "Formulaire rapide",
     "FullName": "Nom Prénom*",

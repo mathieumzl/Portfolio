@@ -6,6 +6,7 @@ import part from '../views/Part.vue'
 import projets from '../views/Projets.vue'
 import contact from '../views/Contact.vue'
 import mentionslegales from '../views/Mentionslegales.vue'
+import connect from '../views/Connect.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,14 @@ const routes: Array<RouteConfig> = [
     path: '/mentionslegales',
     name: 'mentionslegales',
     component: mentionslegales
+  },
+  {
+    path: '/connect',
+    name: 'connect',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: connect
   },
   {
     path: '*',

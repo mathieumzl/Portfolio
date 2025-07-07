@@ -8,7 +8,7 @@
           </v-toolbar-title>
               <v-icon size="1em"  class="IconHeader" >mdi-fountain-pen-tip</v-icon>
           <v-toolbar-title class="TitreContactHP" style="color:white !important;">
-            <a href="mailto:contact@mazal-mathieu.fr" style="text-decoration: none;">{{$t('HeaderEmail')}}</a>
+            <a href="mailto:mazal.mathieu@gmail.com" style="text-decoration: none;">{{$t('HeaderEmail')}}</a>
           </v-toolbar-title>
         </v-app-bar>
       <!-- Barre de couleur au-dessus de la v-app-bar -->
