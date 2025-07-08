@@ -5,9 +5,8 @@ name: CI
 # Controls when the workflow will run
 on:
   release:
-    types: # This configuration does not affect the page_build event above
-      - created
-
+    types: [published, created] # This configuration does not affect the page_build event above
+  workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
