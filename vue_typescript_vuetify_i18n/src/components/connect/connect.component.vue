@@ -66,7 +66,7 @@
             ></iframe>
         </div>
         <v-btn
-        class="custom-btn mt-6<!--  --> mb-5"
+        class="custom-btn mt-6 mb-5"
         href="https://www.mazal-mathieu.fr/"
         target="_blank"
         rel="noopener"
