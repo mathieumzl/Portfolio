@@ -15,7 +15,7 @@
             <li><strong>Forme juridique :</strong> <span>Entrepreneur individuel</span></li>
             <li><strong>SIRET :</strong> <span>91517514500043</span></li>
             <li><strong>Siège social :</strong> <span>Montpellier, France</span></li>
-            <li><strong>Email de contact :</strong> <a href="mailto:contact@mazal.mathieu.fr">contact@mazal.mathieu.fr</a></li>
+            <li><strong>Email de contact :</strong> <a href="mailto:mazal.mathieu@gmail.com">mazal.mathieu@gmail.com</a></li>
           </ul>
         </div>
 
@@ -34,13 +34,13 @@
           <div class="section-title"><h3>3. Propriété intellectuelle</h3></div>
           <p>Les créations réalisées par <strong>MZL Home Design</strong> (plans, rendus, visuels, etc.) sont la propriété exclusive de l'entreprise et sont protégées par le droit d'auteur. Toute utilisation à des fins commerciales ou modification est strictement interdite sans accord écrit préalable.</p>
           <p>Toute reproduction, modification ou diffusion, totale ou partielle, de ces éléments sans autorisation préalable écrite est interdite. L'utilisation est uniquement autorisée à des fins privées et non commerciales.</p>
-          <p>Toute demande d'utilisation de contenu doit être adressée à : <a href="mailto:contact@mazal.mathieu.fr">contact@mazal.mathieu.fr</a></p>
+          <p>Toute demande d'utilisation de contenu doit être adressée à : <a href="mailto:mazal.mathieu@gmail.com">mazal.mathieu@gmail.com</a></p>
         </div>
 
         <div class="info-section">
           <div class="section-title"><h3>4. Protection des données personnelles</h3></div>
           <p>Les informations collectées via le formulaire de contact sont destinées exclusivement à <strong>MZL Home Design</strong>, dans le but de répondre à vos demandes. Aucune donnée personnelle ne sera communiquée à des tiers sans votre consentement préalable.</p>
-          <p>Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 et au Règlement Général sur la Protection des Données (RGPD), vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition concernant vos données personnelles. Pour exercer ces droits, il vous suffit de nous contacter à l'adresse suivante : <a href="mailto:contact@mazal.mathieu.fr">contact@mazal.mathieu.fr</a></p>
+          <p>Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 et au Règlement Général sur la Protection des Données (RGPD), vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition concernant vos données personnelles. Pour exercer ces droits, il vous suffit de nous contacter à l'adresse suivante : <a href="mailto:mazal.mathieu@gmail.com">mazal.mathieu@gmail.com</a></p>
           <p>Le site n’utilise aucun outil de suivi, tel que Google Analytics, ni de cookies destinés à collecter des données personnelles.</p>
           <p>Les informations recueillies par le biais des formulaires de contact sont exclusivement utilisées pour traiter vos demandes et sont stockées de manière sécurisée.</p>
         </div>
@@ -63,7 +63,7 @@
 
         <div class="info-section">
           <div class="section-title"><h3>7. Contact</h3></div>
-          <p>Pour toute question relative aux mentions légales, vous pouvez contacter :  <a href="mailto:contact@mazal.mathieu.fr">contact@mazal.mathieu.fr</a></p>
+          <p>Pour toute question relative aux mentions légales, vous pouvez contacter :  <a href="mailto:mazal.mathieu@gmail.com">mazal.mathieu@gmail.com</a></p>
         </div>
       </div>
     </v-container>

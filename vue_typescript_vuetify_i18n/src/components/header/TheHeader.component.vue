@@ -119,7 +119,7 @@
             <v-list-item-icon>
               <v-icon color="rgba(62, 62, 62, 1)">mdi-card-account-mail-outline</v-icon>
             </v-list-item-icon>
-            <a  href="/contact" class="TitreHP">{{$t('HeaderContact')}}</a>
+            <router-link to="/contact" @click="scrollTo('#contacts')" class="TitreHP">{{$t('HeaderContact')}}</router-link>
           </v-list-item>
 
         </v-list-item-group>

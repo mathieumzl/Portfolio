@@ -114,12 +114,20 @@ export default Vue.extend({
 .custom-btn {
   background: rgba(245, 241, 235, 1) !important;
   color: rgba(62, 62, 62, 1);
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 12px 24px;
-  border: 2px solid rgba(62, 62, 62, 1);
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
+  transition: background-color 0.2s, transform 0.2s !important;
+  border-radius: 12px !important;
+  border: 2px solid rgba(62, 62, 62, 1) !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+
+  width: 100% !important;
+  max-width: 500px !important;
+  margin: 12px auto !important; /* marge verticale + centrage */
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 1rem !important;
 }
 .custom-btn:hover {
   transform: scale(1.1);  /* Effet d'agrandissement */
@@ -131,9 +139,9 @@ export default Vue.extend({
   margin-top: 40px !important;
 }
 .map-container {
-  max-width: 50px !important; /* Largeur maximale de la carte */
-  min-width: 50% !important; /* Par exemple, 80% de la largeur du parent */
-  margin: 0 auto !important; /* Centrer horizontalement */
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 20px auto !important;
   border-radius: 12px !important;
   overflow: hidden !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
@@ -164,11 +172,17 @@ export default Vue.extend({
   text-decoration: none !important;
   background-color: rgba(181, 188, 175, 1) !important;
 
-  max-height: 4em !important;
-  max-width: 30em !important;
+  width: 100% !important;
+  max-width: 500px !important;
+  margin: 12px auto !important; /* marge verticale + centrage */
 
-  margin: 0 auto !important; /* Centrage horizontal */
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 1rem !important;
 }
+
 .reseau-nom {
   font-size: 1.3rem !important; /* Taille moyenne */
   font-weight: 500 !important;
