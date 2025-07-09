@@ -17,11 +17,11 @@
             {{ $t("PresentationHomePage.Titre") }}
         </a><br/>
                 <v-btn
-        class="custom-btn mt-4"
-        href="https://www.mazal-mathieu.fr/"
-        target="_blank"
-        rel="noopener"
-        >
+                class="custom-btn mt-4"
+                href="https://www.mazal-mathieu.fr/"
+                target="_blank"
+                rel="noopener"
+                >
             <div class="reseau-nom">
                 {{ $t("ButtonCarte") }}
             </div>
@@ -33,7 +33,6 @@
                 v-for="network in networks"
                 :key="network.url"
                 cols="12"
-
             >
                 <v-card
                 :href="network.url"
@@ -133,7 +132,7 @@ export default Vue.extend({
 }
 .map-container {
   max-width: 50px !important; /* Largeur maximale de la carte */
-  min-width: 80% !important; /* Par exemple, 80% de la largeur du parent */
+  min-width: 50% !important; /* Par exemple, 80% de la largeur du parent */
   margin: 0 auto !important; /* Centrer horizontalement */
   border-radius: 12px !important;
   overflow: hidden !important;
@@ -165,9 +164,7 @@ export default Vue.extend({
   text-decoration: none !important;
   background-color: rgba(181, 188, 175, 1) !important;
 
-  min-height: 4em !important;
   max-height: 4em !important;
-  min-width: 30em !important;
   max-width: 30em !important;
 
   margin: 0 auto !important; /* Centrage horizontal */

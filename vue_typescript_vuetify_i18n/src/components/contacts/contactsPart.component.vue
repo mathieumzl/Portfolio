@@ -134,7 +134,7 @@ export default Vue.extend({
       this.$v.$touch() // Force la validation des champs avant d'envoyer
       if (!this.isValid()) return
       this.overlay = true
-      emailjs.sendForm('service_gd7g9by', 'template_713c125', this.$refs.form, 'O8Bauw8Gs7ykLrpHH')
+      emailjs.sendForm('service_q9f4h2h', 'template_713c125', this.$refs.form, 'O8Bauw8Gs7ykLrpHH')
         .then((result) => {
           console.log('SUCCESS!', this.snackbar = true, result.text)
           this.overlay = false
